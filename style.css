@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    padding: .5rem;
+}
+
+.h1 {
+    font-size: 1.5rem;
+}
+
+.selection {
+    margin-top: 1rem;
+}
+
+.selection select {
+    max-width: 90%;
+    outline: none;
+}
+
+.selection option {
+    font-size: .75rem;
+}
