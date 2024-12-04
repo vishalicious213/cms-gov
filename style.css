@@ -12,15 +12,17 @@ body {
     font-size: 1.5rem;
 }
 
-.selection {
+/* SELECTION AREA */
+
+.selection-area {
     margin-top: 1rem;
 }
 
-.selection select {
+.selection-area select {
     max-width: 90%;
     outline: none;
 }
 
-.selection option {
+.selection-area option {
     font-size: .75rem;
 }
