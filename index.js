@@ -19,9 +19,9 @@ function selectSelectionArea(value) {
     }
 }
 
-function selectState() {
+async function selectState() {
     selectionOther.innerHTML = ""
-    getStates()
+    await getStates()
 
     selectionOther.innerHTML = `
         <label class="label" for="state">Choose a state:</label>
@@ -31,8 +31,11 @@ function selectState() {
     `
 
     const stateOptions = document.getElementById("state")
-    states.map (state => {
-        stateOptions += `<option value="${state}">${state}</option>`
+    states.forEach (state => {
+        const option = document.createElement("option")
+        option.value = state
+        option.textContent = state
+        stateOptions.appendChild(option)
     })
 }
 
