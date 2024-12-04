@@ -29,6 +29,11 @@ body {
     font-size: .75rem;
 }
 
+.label {
+    margin-top: .5rem;
+    display: inline-block;
+}
+
 /* MAIN AREA */
 
 main {

@@ -1,5 +1,6 @@
-const selectionArea = document.getElementById("selection-area")
 const mainArea = document.getElementById("main")
+const selectionArea = document.getElementById("selection-area")
+const selectionOther = document.getElementById("selection-other")
 
 // ⬇️ EVENT LISTENERS ⬇️
 
@@ -13,8 +14,20 @@ selectionArea.addEventListener("click", function(e) {
 
 function selectSelectionArea(value) {
     if (value === "cms671") {
-        renderMain()
+        selectState()
     }
+}
+
+function selectState() {
+    selectionOther.innerHTML = ""
+
+    selectionOther.innerHTML = `
+        <label class="label" for="state">Choose a state:</label>
+        <select name="state" id="state">
+            <option value="none"></option>
+            <option value="AK">AK</option>
+        </select>
+    `
 }
 
 // ⬇️ RENDER FUNCTIONS ⬇️
