@@ -23,6 +23,6 @@ function renderMain() {
     mainArea.innerHTML = ""
 
     mainArea.innerHTML = `
-        <h1>Long-Term Care Facility Characteristics from CMS Form-671</h1>
+        <h2>Long-Term Care Facility Characteristics from CMS Form-671</h2>
     `
 }

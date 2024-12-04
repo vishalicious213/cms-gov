@@ -16,6 +16,8 @@ body {
 
 .selection-area {
     margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gray;
 }
 
 .selection-area select {
@@ -25,4 +27,14 @@ body {
 
 .selection-area option {
     font-size: .75rem;
+}
+
+/* MAIN AREA */
+
+main {
+    margin-top: 1rem;
+}
+
+main h2 {
+    font-size: 1.25rem;
 }
