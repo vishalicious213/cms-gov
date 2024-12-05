@@ -43,3 +43,13 @@ main {
 main h2 {
     font-size: 1.25rem;
 }
+
+#facility-list option {
+    font-size: .6rem;
+}
+
+#facility-list {
+    max-width: 90%;
+    outline: none;
+    font-size: .6rem;
+}
