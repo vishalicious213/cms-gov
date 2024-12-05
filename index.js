@@ -79,5 +79,20 @@ async function render671(state) {
 
     mainArea.innerHTML = `
         <h2>Long-Term Care Facility Characteristics from CMS Form-671</h2>
+
+        <label class="label" for="facility-list">Choose a facility:</label>
+        <select name="facility-list" id="facility-list"></select>
     `
+    renderFacilityList()
+}
+
+async function renderFacilityList() {
+    const facilityList = document.getElementById("facility-list")
+    facilities.forEach (facility => {
+        // console.log(facility["Facility Name"])
+        const option = document.createElement("option")
+        option.value = facility["Facility Name"]
+        option.textContent = facility["Facility Name"]
+        facilityList.appendChild(option)
+    })
 }
