@@ -2,6 +2,7 @@ const mainArea = document.getElementById("main")
 const selectionArea = document.getElementById("selection-area")
 const selectionOther = document.getElementById("selection-other")
 let states = []
+let facilities = []
 
 // ⬇️ EVENT LISTENERS ⬇️
 
@@ -60,8 +61,8 @@ async function getStateFacilities(state) {
     try {
         const res = await fetch(`https://data.cms.gov/data-api/v1/dataset/510f8762-0cf7-4aa3-93ff-e13af0b3bf26/data?filter[State]=${state}&additionalProp1=%7B%7D&offset=0&size=10`)
         const data = await res.json()
-        console.log(data)
-        // facilities = data.map(item => item.State)
+        // console.log(data)
+        facilities = data
     }
     catch (err) {
         console.error("Failed to fetch state facilities from CMS:", err)
@@ -70,9 +71,11 @@ async function getStateFacilities(state) {
 
 // ⬇️ RENDER FUNCTIONS ⬇️
 
-function render671(state) {
+async function render671(state) {
     mainArea.innerHTML = ""
-    console.log(state)
+    // console.log(state)
+    await getStateFacilities(state)
+    console.log(facilities)
 
     mainArea.innerHTML = `
         <h2>Long-Term Care Facility Characteristics from CMS Form-671</h2>
