@@ -6,8 +6,12 @@ let states = []
 // ⬇️ EVENT LISTENERS ⬇️
 
 selectionArea.addEventListener("click", function(e) {
-    if (e.target.id) {
+    if (e.target.id === "dataset") {
         selectSelectionArea(e.target.value)
+    }
+
+    if (e.target.id === "state") {
+        console.log(e.target.value)
     }
 })
 
@@ -26,7 +30,7 @@ async function selectState() {
     selectionOther.innerHTML = `
         <label class="label" for="state">Choose a state:</label>
         <select name="state" id="state">
-            <option value="none"></option>
+            <option value=""></option>
         </select>
     `
 
@@ -56,6 +60,7 @@ async function getStates() {
 
 function render671() {
     mainArea.innerHTML = ""
+    const state = document.getElementById("state")
 
     mainArea.innerHTML = `
         <h2>Long-Term Care Facility Characteristics from CMS Form-671</h2>
