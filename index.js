@@ -59,10 +59,11 @@ async function getStates() {
 
 async function getStateFacilities(state) {
     try {
-        const res = await fetch(`https://data.cms.gov/data-api/v1/dataset/510f8762-0cf7-4aa3-93ff-e13af0b3bf26/data?filter[State]=${state}&additionalProp1=%7B%7D&offset=0&size=10`)
+        const res = await fetch(`https://data.cms.gov/data-api/v1/dataset/510f8762-0cf7-4aa3-93ff-e13af0b3bf26/data?filter[State]=${state}&additionalProp1=%7B%7D&offset=0&size=2000`)
         const data = await res.json()
         // console.log(data)
         facilities = data
+        facilities.sort((a, b) => a["Facility Name"].localeCompare(b["Facility Name"]))
     }
     catch (err) {
         console.error("Failed to fetch state facilities from CMS:", err)
