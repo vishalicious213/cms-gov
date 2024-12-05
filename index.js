@@ -11,7 +11,7 @@ selectionArea.addEventListener("click", function(e) {
     }
 
     if (e.target.id === "state") {
-        console.log(e.target.value)
+        render671(e.target.value)
     }
 })
 
@@ -58,9 +58,9 @@ async function getStates() {
 
 // ⬇️ RENDER FUNCTIONS ⬇️
 
-function render671() {
+function render671(state) {
     mainArea.innerHTML = ""
-    const state = document.getElementById("state")
+    console.log(state)
 
     mainArea.innerHTML = `
         <h2>Long-Term Care Facility Characteristics from CMS Form-671</h2>
