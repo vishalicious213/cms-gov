@@ -128,6 +128,7 @@ function renderFacility(facilityName) {
         <p>State</p>
         <p>${State}</p>
         <p>Zip Code</p>
+        <p>${zip}</p>
         <p>Certification Date</p>
         <p>${certDate}</p>
 
@@ -182,16 +183,15 @@ function renderFacility(facilityName) {
         <p>Continuing Care Retirement Community (CCRC)</p>
         <p>${ccrc}</p>
 
-
-        <p>${zip}</p>
-        <p>7 Day RN Hrs Waived Per Week</p>
-        <p>${rnHours}</p>
+        <h3>Nurse Staffing</h3>
         <p>7 Day RN Waiver Date</p>
         <p>${rnWaiverDate}</p>
-        <p>24 Hr Licensed Nursing Hrs Waived Per Week</p>
-        <p>${nursingHours}</p>
+        <p>7 Day RN Hrs Waived Per Week</p>
+        <p>${rnHours}</p>
         <p>24 Hr Licensed Nursing Waiver Date</p>
         <p>${nursingWaiverDate}</p>
+        <p>24 Hr Licensed Nursing Hrs Waived Per Week</p>
+        <p>${nursingHours}</p>
         <p>Nurse Aide Training and Competency Evaluation Program</p>
         <p>${aideTraining}</p>
     `
