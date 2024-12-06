@@ -152,19 +152,7 @@ function renderFacility(facilityName) {
         <p>Total Residents</p>
         <p>${totalResidents}</p>
 
-        <p>${zip}</p>
-        <p>7 Day RN Hrs Waived Per Week</p>
-        <p>${rnHours}</p>
-        <p>7 Day RN Waiver Date</p>
-        <p>${rnWaiverDate}</p>
-        <p>24 Hr Licensed Nursing Hrs Waived Per Week</p>
-        <p>${nursingHours}</p>
-        <p>24 Hr Licensed Nursing Waiver Date</p>
-        <p>${nursingWaiverDate}</p>
-        <p>Continuing Care Retirement Community (CCRC)</p>
-        <p>${ccrc}</p>
-        <p>Facility Conducts Experimental Research</p>
-        <p>${research}</p>
+        <h3>Special Care Units</h3>
         <p>Number of AIDS Beds</p>
         <p>${bedsAids}</p>
         <p>Number of Alzheimer's Disease Beds</p>
@@ -179,10 +167,25 @@ function renderFacility(facilityName) {
         <p>${bedsHospice}</p>
         <p>Number of Huntington's Disease Beds</p>
         <p>${bedsHuntington}</p>
-        <p>Number of Other Specialized Rehab Beds</p>
-        <p>${bedsSpecialtyRehab}</p>
         <p>Number of Ventilator Beds</p>
         <p>${bedsVent}</p>
+        <p>Number of Other Specialized Rehab Beds</p>
+        <p>${bedsSpecialtyRehab}</p>
+
+
+        <p>${zip}</p>
+        <p>7 Day RN Hrs Waived Per Week</p>
+        <p>${rnHours}</p>
+        <p>7 Day RN Waiver Date</p>
+        <p>${rnWaiverDate}</p>
+        <p>24 Hr Licensed Nursing Hrs Waived Per Week</p>
+        <p>${nursingHours}</p>
+        <p>24 Hr Licensed Nursing Waiver Date</p>
+        <p>${nursingWaiverDate}</p>
+        <p>Continuing Care Retirement Community (CCRC)</p>
+        <p>${ccrc}</p>
+        <p>Facility Conducts Experimental Research</p>
+        <p>${research}</p>
         <p>Nurse Aide Training and Competency Evaluation Program</p>
         <p>${aideTraining}</p>
         <p>Organized Family Member Group</p>
