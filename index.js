@@ -131,6 +131,19 @@ function renderFacility(facilityName) {
         <p>Certification Date</p>
         <p>${certDate}</p>
 
+        <p>Program Participation Code</p>
+        <p>${participationCode}</p>
+        <p>Hospital Based</p>
+        <p>${hospitalBased}</p>
+        <p>Ownership Type</p>
+        <p>${ownership}</p>
+        <p>Multi-Facility Organization</p>
+        <p>${multiFamilyOrg}</p>
+        <p>Multi-Facility Organization Name</p>
+        <p>${multiFamilyName}</p>
+
+        <h3>Census</h3>
+
         
 
         <p>${zip}</p>
@@ -146,16 +159,10 @@ function renderFacility(facilityName) {
         <p>${ccrc}</p>
         <p>Facility Conducts Experimental Research</p>
         <p>${research}</p>
-        <p>Hospital Based</p>
-        <p>${hospitalBased}</p>
         <p>Medicaid Census</p>
         <p>${medicaidCensus}</p>
         <p>Medicare Census</p>
         <p>${medicareCensus}</p>
-        <p>Multi-Facility Organization</p>
-        <p>${multiFamilyOrg}</p>
-        <p>Multi-Facility Organization Name</p>
-        <p>${multiFamilyName}</p>
         <p>Number of AIDS Beds</p>
         <p>${bedsAids}</p>
         <p>Number of Alzheimer's Disease Beds</p>
@@ -182,10 +189,6 @@ function renderFacility(facilityName) {
         <p>${residentGroup}</p>
         <p>Other Census</p>
         <p>${otherCensus}</p>
-        <p>Ownership Type</p>
-        <p>${ownership}</p>
-        <p>Program Participation Code</p>
-        <p>${participationCode}</p>
         <p>Total Residents</p>
         <p>${totalResidents}</p>
     `
