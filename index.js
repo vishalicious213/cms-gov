@@ -19,6 +19,10 @@ selectionArea.addEventListener("click", function(e) {
 // ⬇️ EVENT HANDLERS ⬇️
 
 function selectSelectionArea(value) {
+    if (value === "none") {
+        selectionOther.innerHTML = ""
+    }
+
     if (value === "cms671") {
         selectState()
     }
