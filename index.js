@@ -86,13 +86,14 @@ async function getStateFacilities(state) {
 async function render671(state) {
     mainArea.innerHTML = ""
     await getStateFacilities(state)
-    console.log(facilities)
+    // console.log(facilities)
 
     mainArea.innerHTML = `
         <h2>Long-Term Care Facility Characteristics from CMS Form-671</h2>
 
         <label class="label" for="facility-list">Choose a facility:</label>
         <select name="facility-list" id="facility-list"></select>
+        <section id="facility-info" class="facility-info"></section>
     `
     renderFacilityList()
 }
@@ -108,7 +109,14 @@ async function renderFacilityList() {
 }
 
 function renderFacility(facilityName) {
-    console.log(facilityName)
-    const facilityInfo = facilities.find(facility => facility["Facility Name"] === facilityName)
-    console.log(facilityInfo)
+    const facilityInfo = document.getElementById("facility-info")
+    facilityInfo.innerHTML = ""
+    // console.log(facilityName)
+    const facilityData = facilities.find(facility => facility["Facility Name"] === facilityName)
+    console.log(facilityData)
+
+    const {"Facility Name": name} = facilityData
+    facilityInfo.innerHTML = `
+        <h2>${name}</h2>
+    `
 }
