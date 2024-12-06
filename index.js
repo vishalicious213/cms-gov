@@ -141,14 +141,47 @@ function renderFacility(facilityName) {
         <p>${ccrc}</p>
         <p>Facility Conducts Experimental Research</p>
         <p>${research}</p>
-        <p></p>
+        <p>Hospital Based</p>
         <p>${}</p>
-        <p></p>
+        <p>Medicaid Census</p>
         <p>${}</p>
-        <p></p>
+        <p>Medicare Census</p>
         <p>${}</p>
-        <p></p>
+        <p>Multi-Facility Organization</p>
         <p>${}</p>
-
+        <p>Multi-Facility Organization Name</p>
+        <p>${}</p>
+        <p>Number of AIDS Beds</p>
+        <p>${}</p>
+        <p>Number of Alzheimer's Disease Beds</p>
+        <p>${}</p>
+        <p>Number of Dialysis Beds</p>
+        <p>${}</p>
+        <p>Number of Disabled Children/Young Adult Beds</p>
+        <p>${}</p>
+        <p>Number of Head Trauma Beds</p>
+        <p>${}</p>
+        <p>Number of Hospice Beds</p>
+        <p>${}</p>
+        <p>Number of Huntington's Disease Beds</p>
+        <p>${}</p>
+        <p>Number of Other Specialized Rehab Beds</p>
+        <p>${}</p>
+        <p>Number of Ventilator Beds</p>
+        <p>${}</p>
+        <p>Nurse Aide Training and Competency Evaluation Program</p>
+        <p>${}</p>
+        <p>Organized Family Member Group</p>
+        <p>${}</p>
+        <p>Organized Residents' Group</p>
+        <p>${}</p>
+        <p>Other Census</p>
+        <p>${}</p>
+        <p>Ownership Type</p>
+        <p>${}</p>
+        <p>Program Participation Code</p>
+        <p>${}</p>
+        <p>Total Residents</p>
+        <p>${}</p>
     `
 }
