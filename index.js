@@ -115,7 +115,8 @@ function renderFacility(facilityName) {
     const facilityData = facilities.find(facility => facility["Facility Name"] === facilityName)
     console.log(facilityData)
 
-    const {"Facility Name": name, "Provider Number": providerNum, City, State, "Zip Code": zip} = facilityData
+    const {"Facility Name": name, "Provider Number": providerNum, City, State, "Zip Code": zip, "7 Day RN Hrs Waived Per Week": rnHours, "7 Day RN Waiver Date": rnWaiverDate, "24 Hr Licensed Nursing Hrs Waived Per Week": nursingHours, "24 Hr Licensed Nursing Waiver Date": nursingWaiverDate, "Certification Date": certDate, "Continuing Care Retirement Community (CCRC)": ccrc, "Facility Conducts Experimental Research": research} = facilityData
+
     facilityInfo.innerHTML = `
         <h2>${name}</h2>
         <p>Provider Number</p>
@@ -126,6 +127,28 @@ function renderFacility(facilityName) {
         <p>${State}</p>
         <p>Zip Code</p>
         <p>${zip}</p>
+        <p>7 Day RN Hrs Waived Per Week</p>
+        <p>${rnHours}</p>
+        <p>7 Day RN Waiver Date</p>
+        <p>${rnWaiverDate}</p>
+        <p>24 Hr Licensed Nursing Hrs Waived Per Week</p>
+        <p>${nursingHours}</p>
+        <p>24 Hr Licensed Nursing Waiver Date</p>
+        <p>${nursingWaiverDate}</p>
+        <p>Certification Date</p>
+        <p>${certDate}</p>
+        <p>Continuing Care Retirement Community (CCRC)</p>
+        <p>${ccrc}</p>
+        <p>Facility Conducts Experimental Research</p>
+        <p>${research}</p>
+        <p></p>
+        <p>${}</p>
+        <p></p>
+        <p>${}</p>
+        <p></p>
+        <p>${}</p>
+        <p></p>
+        <p>${}</p>
 
     `
 }
