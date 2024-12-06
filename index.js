@@ -142,33 +142,33 @@ function renderFacility(facilityName) {
         <p>Facility Conducts Experimental Research</p>
         <p>${research}</p>
         <p>Hospital Based</p>
-        <p>${}</p>
+        <p>${hospitalBased}</p>
         <p>Medicaid Census</p>
-        <p>${}</p>
+        <p>${medicaidCensus}</p>
         <p>Medicare Census</p>
-        <p>${}</p>
+        <p>${medicareCensus}</p>
         <p>Multi-Facility Organization</p>
-        <p>${}</p>
+        <p>${multiFamilyOrg}</p>
         <p>Multi-Facility Organization Name</p>
-        <p>${}</p>
+        <p>${multiFamilyName}</p>
         <p>Number of AIDS Beds</p>
-        <p>${}</p>
+        <p>${bedsAids}</p>
         <p>Number of Alzheimer's Disease Beds</p>
-        <p>${}</p>
+        <p>${bedsAlz}</p>
         <p>Number of Dialysis Beds</p>
-        <p>${}</p>
+        <p>${bedsDialysis}</p>
         <p>Number of Disabled Children/Young Adult Beds</p>
-        <p>${}</p>
+        <p>${bedsKids}</p>
         <p>Number of Head Trauma Beds</p>
-        <p>${}</p>
+        <p>${bedsHeadTrauma}</p>
         <p>Number of Hospice Beds</p>
-        <p>${}</p>
+        <p>${bedsHospice}</p>
         <p>Number of Huntington's Disease Beds</p>
-        <p>${}</p>
+        <p>${bedsHuntington}</p>
         <p>Number of Other Specialized Rehab Beds</p>
-        <p>${}</p>
+        <p>${bedsSpecialtyRehab}</p>
         <p>Number of Ventilator Beds</p>
-        <p>${}</p>
+        <p>${bedsVent}</p>
         <p>Nurse Aide Training and Competency Evaluation Program</p>
         <p>${}</p>
         <p>Organized Family Member Group</p>
