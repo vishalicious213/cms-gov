@@ -115,8 +115,17 @@ function renderFacility(facilityName) {
     const facilityData = facilities.find(facility => facility["Facility Name"] === facilityName)
     console.log(facilityData)
 
-    const {"Facility Name": name} = facilityData
+    const {"Facility Name": name, "Provider Number": providerNum, City, State, "Zip Code": zip} = facilityData
     facilityInfo.innerHTML = `
         <h2>${name}</h2>
+        <p>Provider Number</p>
+        <p>${providerNum}</p>
+        <p>City</p>
+        <p>${City}</p>
+        <p>State</p>
+        <p>${State}</p>
+        <p>Zip Code</p>
+        <p>${zip}</p>
+
     `
 }
