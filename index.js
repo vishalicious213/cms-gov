@@ -16,9 +16,10 @@ selectionArea.addEventListener("click", function(e) {
     }
 })
 
+// render facility when selected from facility list
 mainArea.addEventListener("click", function(e) {
     if (e.target.id === "facility-list") {
-        console.log(e.target.value)
+        renderFacility(e.target.value)
     }
 })
 
@@ -107,5 +108,5 @@ async function renderFacilityList() {
 }
 
 function renderFacility(facility) {
-    
+    console.log(facility)
 }
