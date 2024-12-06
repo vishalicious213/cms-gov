@@ -115,7 +115,7 @@ function renderFacility(facilityName) {
     const facilityData = facilities.find(facility => facility["Facility Name"] === facilityName)
     console.log(facilityData)
 
-    const {"Facility Name": name, "Provider Number": providerNum, City, State, "Zip Code": zip, "7 Day RN Hrs Waived Per Week": rnHours, "7 Day RN Waiver Date": rnWaiverDate, "24 Hr Licensed Nursing Hrs Waived Per Week": nursingHours, "24 Hr Licensed Nursing Waiver Date": nursingWaiverDate, "Certification Date": certDate, "Continuing Care Retirement Community (CCRC)": ccrc, "Facility Conducts Experimental Research": research} = facilityData
+    const {"Facility Name": name, "Provider Number": providerNum, City, State, "Zip Code": zip, "7 Day RN Hrs Waived Per Week": rnHours, "7 Day RN Waiver Date": rnWaiverDate, "24 Hr Licensed Nursing Hrs Waived Per Week": nursingHours, "24 Hr Licensed Nursing Waiver Date": nursingWaiverDate, "Certification Date": certDate, "Continuing Care Retirement Community (CCRC)": ccrc, "Facility Conducts Experimental Research": research, "Hospital Based": hospitalBased, "Medicaid Census": medicaidCensus, "Medicare Census": medicareCensus, "Multi-Facility Organization": multiFamilyOrg, "Multi-Facility Organization Name": multiFamilyName, "Number of AIDS Beds", "Number of Alzheimer's Disease Beds", "Number of Dialysis Beds", "Number of Disabled Children/Young Adult Beds", "Number of Head Trauma Beds", "Number of Hospice Beds", "Number of Huntington's Disease Beds", "Number of Other Specialized Rehab Beds", "Number of Ventilator Beds"} = facilityData
 
     facilityInfo.innerHTML = `
         <h2>${name}</h2>
