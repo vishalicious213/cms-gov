@@ -107,6 +107,8 @@ async function renderFacilityList() {
     })
 }
 
-function renderFacility(facility) {
-    console.log(facility)
+function renderFacility(facilityName) {
+    console.log(facilityName)
+    const facilityInfo = facilities.find(facility => facility["Facility Name"] === facilityName)
+    console.log(facilityInfo)
 }
