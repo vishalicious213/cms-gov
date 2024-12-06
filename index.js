@@ -119,6 +119,8 @@ function renderFacility(facilityName) {
 
     facilityInfo.innerHTML = `
         <h2>${name}</h2>
+
+        <h3>Facility Info</h3>
         <p>Provider Number</p>
         <p>${providerNum}</p>
         <p>City</p>
@@ -126,6 +128,11 @@ function renderFacility(facilityName) {
         <p>State</p>
         <p>${State}</p>
         <p>Zip Code</p>
+        <p>Certification Date</p>
+        <p>${certDate}</p>
+
+        
+
         <p>${zip}</p>
         <p>7 Day RN Hrs Waived Per Week</p>
         <p>${rnHours}</p>
@@ -135,8 +142,6 @@ function renderFacility(facilityName) {
         <p>${nursingHours}</p>
         <p>24 Hr Licensed Nursing Waiver Date</p>
         <p>${nursingWaiverDate}</p>
-        <p>Certification Date</p>
-        <p>${certDate}</p>
         <p>Continuing Care Retirement Community (CCRC)</p>
         <p>${ccrc}</p>
         <p>Facility Conducts Experimental Research</p>
