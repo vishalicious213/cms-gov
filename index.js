@@ -16,6 +16,12 @@ selectionArea.addEventListener("click", function(e) {
     }
 })
 
+mainArea.addEventListener("click", function(e) {
+    if (e.target.id === "facility-list") {
+        console.log(e.target.value)
+    }
+})
+
 // ⬇️ EVENT HANDLERS ⬇️
 
 function selectSelectionArea(value) {
@@ -78,7 +84,6 @@ async function getStateFacilities(state) {
 
 async function render671(state) {
     mainArea.innerHTML = ""
-    // console.log(state)
     await getStateFacilities(state)
     console.log(facilities)
 
@@ -94,10 +99,13 @@ async function render671(state) {
 async function renderFacilityList() {
     const facilityList = document.getElementById("facility-list")
     facilities.forEach (facility => {
-        // console.log(facility["Facility Name"])
         const option = document.createElement("option")
         option.value = facility["Facility Name"]
         option.textContent = facility["Facility Name"]
         facilityList.appendChild(option)
     })
+}
+
+function renderFacility(facility) {
+    
 }
