@@ -170,18 +170,18 @@ function renderFacility(facilityName) {
         <p>Number of Ventilator Beds</p>
         <p>${bedsVent}</p>
         <p>Nurse Aide Training and Competency Evaluation Program</p>
-        <p>${}</p>
+        <p>${aideTraining}</p>
         <p>Organized Family Member Group</p>
-        <p>${}</p>
+        <p>${familyGroup}</p>
         <p>Organized Residents' Group</p>
-        <p>${}</p>
+        <p>${residentGroup}</p>
         <p>Other Census</p>
-        <p>${}</p>
+        <p>${otherCensus}</p>
         <p>Ownership Type</p>
-        <p>${}</p>
+        <p>${ownership}</p>
         <p>Program Participation Code</p>
-        <p>${}</p>
+        <p>${participationCode}</p>
         <p>Total Residents</p>
-        <p>${}</p>
+        <p>${totalResidents}</p>
     `
 }
