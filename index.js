@@ -172,6 +172,16 @@ function renderFacility(facilityName) {
         <p>Number of Other Specialized Rehab Beds</p>
         <p>${bedsSpecialtyRehab}</p>
 
+        <h3>Special Groups</h3>
+        <p>Organized Residents' Group</p>
+        <p>${residentGroup}</p>
+        <p>Organized Family Member Group</p>
+        <p>${familyGroup}</p>
+        <p>Facility Conducts Experimental Research</p>
+        <p>${research}</p>
+        <p>Continuing Care Retirement Community (CCRC)</p>
+        <p>${ccrc}</p>
+
 
         <p>${zip}</p>
         <p>7 Day RN Hrs Waived Per Week</p>
@@ -182,15 +192,7 @@ function renderFacility(facilityName) {
         <p>${nursingHours}</p>
         <p>24 Hr Licensed Nursing Waiver Date</p>
         <p>${nursingWaiverDate}</p>
-        <p>Continuing Care Retirement Community (CCRC)</p>
-        <p>${ccrc}</p>
-        <p>Facility Conducts Experimental Research</p>
-        <p>${research}</p>
         <p>Nurse Aide Training and Competency Evaluation Program</p>
         <p>${aideTraining}</p>
-        <p>Organized Family Member Group</p>
-        <p>${familyGroup}</p>
-        <p>Organized Residents' Group</p>
-        <p>${residentGroup}</p>
     `
 }
