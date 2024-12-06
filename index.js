@@ -143,8 +143,14 @@ function renderFacility(facilityName) {
         <p>${multiFamilyName}</p>
 
         <h3>Census</h3>
-
-        
+        <p>Medicare Census</p>
+        <p>${medicareCensus}</p>
+        <p>Medicaid Census</p>
+        <p>${medicaidCensus}</p>
+        <p>Other Census</p>
+        <p>${otherCensus}</p>
+        <p>Total Residents</p>
+        <p>${totalResidents}</p>
 
         <p>${zip}</p>
         <p>7 Day RN Hrs Waived Per Week</p>
@@ -159,10 +165,6 @@ function renderFacility(facilityName) {
         <p>${ccrc}</p>
         <p>Facility Conducts Experimental Research</p>
         <p>${research}</p>
-        <p>Medicaid Census</p>
-        <p>${medicaidCensus}</p>
-        <p>Medicare Census</p>
-        <p>${medicareCensus}</p>
         <p>Number of AIDS Beds</p>
         <p>${bedsAids}</p>
         <p>Number of Alzheimer's Disease Beds</p>
@@ -187,9 +189,5 @@ function renderFacility(facilityName) {
         <p>${familyGroup}</p>
         <p>Organized Residents' Group</p>
         <p>${residentGroup}</p>
-        <p>Other Census</p>
-        <p>${otherCensus}</p>
-        <p>Total Residents</p>
-        <p>${totalResidents}</p>
     `
 }
