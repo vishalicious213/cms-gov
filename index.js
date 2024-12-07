@@ -160,45 +160,45 @@ function renderFacility(facilityName) {
         <div>
 
         <h3>Special Care Units</h3>
-        <p>Number of AIDS Beds</p>
+        <p class="field-name">Number of AIDS Beds</p>
         <p>${bedsAids}</p>
         <p>Number of Alzheimer's Disease Beds</p>
         <p>${bedsAlz}</p>
-        <p>Number of Dialysis Beds</p>
+        <p class="field-name">Number of Dialysis Beds</p>
         <p>${bedsDialysis}</p>
-        <p>Number of Disabled Children/Young Adult Beds</p>
+        <p class="field-name">Number of Disabled Children/Young Adult Beds</p>
         <p>${bedsKids}</p>
-        <p>Number of Head Trauma Beds</p>
+        <p class="field-name">Number of Head Trauma Beds</p>
         <p>${bedsHeadTrauma}</p>
-        <p>Number of Hospice Beds</p>
+        <p class="field-name">Number of Hospice Beds</p>
         <p>${bedsHospice}</p>
-        <p>Number of Huntington's Disease Beds</p>
+        <p class="field-name">Number of Huntington's Disease Beds</p>
         <p>${bedsHuntington}</p>
-        <p>Number of Ventilator Beds</p>
+        <p class="field-name">Number of Ventilator Beds</p>
         <p>${bedsVent}</p>
-        <p>Number of Other Specialized Rehab Beds</p>
+        <p class="field-name">Number of Other Specialized Rehab Beds</p>
         <p>${bedsSpecialtyRehab}</p>
 
         <h3>Special Groups</h3>
-        <p>Organized Residents' Group</p>
+        <p class="field-name">Organized Residents' Group</p>
         <p>${residentGroup}</p>
-        <p>Organized Family Member Group</p>
+        <p class="field-name">Organized Family Member Group</p>
         <p>${familyGroup}</p>
-        <p>Facility Conducts Experimental Research</p>
+        <p class="field-name">Facility Conducts Experimental Research</p>
         <p>${research}</p>
-        <p>Continuing Care Retirement Community (CCRC)</p>
+        <p class="field-name">Continuing Care Retirement Community (CCRC)</p>
         <p>${ccrc}</p>
 
         <h3>Nurse Staffing</h3>
-        <p>7 Day RN Waiver Date</p>
+        <p class="field-name">7 Day RN Waiver Date</p>
         <p>${rnWaiverDate}</p>
-        <p>7 Day RN Hrs Waived Per Week</p>
+        <p class="field-name">7 Day RN Hrs Waived Per Week</p>
         <p>${rnHours}</p>
-        <p>24 Hr Licensed Nursing Waiver Date</p>
+        <p class="field-name">24 Hr Licensed Nursing Waiver Date</p>
         <p>${nursingWaiverDate}</p>
-        <p>24 Hr Licensed Nursing Hrs Waived Per Week</p>
+        <p class="field-name">24 Hr Licensed Nursing Hrs Waived Per Week</p>
         <p>${nursingHours}</p>
-        <p>Nurse Aide Training and Competency Evaluation Program</p>
+        <p class="field-name">Nurse Aide Training and Competency Evaluation Program</p>
         <p>${aideTraining}</p>
     `
 }
