@@ -175,35 +175,45 @@ function renderFacility(facilityName) {
 
         <h3>Special Care Units <span class="subtitle">(# of beds)</span></h3>
         <section class="col-3">
-                <p class="field-name">AIDS Beds</p>
-                <p class="field-name">Alzheimer's Disease Beds</p>
-                <p class="field-name">Dialysis Beds</p>
-                <p class="bottom-data">${bedsAids}</p>
-                <p class="bottom-data">${bedsAlz}</p>
-                <p class="bottom-data">${bedsDialysis}</p>
-                <p class="field-name">Disabled Children/Young Adult Beds</p>
-                <p class="field-name">Head Trauma Beds</p>
-                <p class="field-name">Hospice Beds</p>
-                <p class="bottom-data">${bedsKids}</p>
-                <p class="bottom-data">${bedsHeadTrauma}</p>
-                <p class="bottom-data">${bedsHospice}</p>
-                <p class="field-name">Huntington's Disease Beds</p>
-                <p class="field-name">Ventilator Beds</p>
-                <p class="field-name">Other Specialized Rehab Beds</p>
-                <p class="bottom-data">${bedsHuntington}</p>
-                <p class="bottom-data">${bedsVent}</p>
-                <p class="bottom-data">${bedsSpecialtyRehab}</p>
+            <p class="field-name">AIDS Beds</p>
+            <p class="field-name">Alzheimer's Disease Beds</p>
+            <p class="field-name">Dialysis Beds</p>
+            <p class="bottom-data">${bedsAids}</p>
+            <p class="bottom-data">${bedsAlz}</p>
+            <p class="bottom-data">${bedsDialysis}</p>
+            <p class="field-name">Disabled Children/Young Adult Beds</p>
+            <p class="field-name">Head Trauma Beds</p>
+            <p class="field-name">Hospice Beds</p>
+            <p class="bottom-data">${bedsKids}</p>
+            <p class="bottom-data">${bedsHeadTrauma}</p>
+            <p class="bottom-data">${bedsHospice}</p>
+            <p class="field-name">Huntington's Disease Beds</p>
+            <p class="field-name">Ventilator Beds</p>
+            <p class="field-name">Other Specialized Rehab Beds</p>
+            <p class="bottom-data">${bedsHuntington}</p>
+            <p class="bottom-data">${bedsVent}</p>
+            <p class="bottom-data">${bedsSpecialtyRehab}</p>
         </section>
 
         <h3>Special Groups</h3>
-        <p class="field-name">Organized Residents' Group</p>
-        <p>${residentGroup}</p>
-        <p class="field-name">Organized Family Member Group</p>
-        <p>${familyGroup}</p>
-        <p class="field-name">Facility Conducts Experimental Research</p>
-        <p>${research}</p>
-        <p class="field-name">Continuing Care Retirement Community (CCRC)</p>
-        <p>${ccrc}</p>
+        <section class="col-2-800">
+            <div>
+                <p class="field-name">Organized Residents' Group</p>
+                <p>${residentGroup}</p>
+            </div>
+            <div>
+                <p class="field-name">Organized Family Member Group</p>
+                <p>${familyGroup}</p>
+            </div>
+            <div>
+                <p class="field-name">Facility Conducts Experimental Research</p>
+                <p>${research}</p>
+            </div>
+            <div>
+                <p class="field-name">Continuing Care Retirement Community (CCRC)</p>
+                <p>${ccrc}</p>
+            </div>
+        </section>
 
         <h3>Nurse Staffing</h3>
         <section class="col-2">
