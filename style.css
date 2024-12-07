@@ -12,6 +12,7 @@ body {
     padding: .5rem;
     max-width: 800px;
     margin: auto;
+    background: #FCFCFC;
 }
 
 .h1, h2, h3 {
