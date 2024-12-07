@@ -173,44 +173,26 @@ function renderFacility(facilityName) {
             </div>
         </section>
 
-        <h3>Special Care Units</h3>
+        <h3>Special Care Units <span class="subtitle">(# of beds)</span></h3>
         <section class="col-3">
-            <div class="grid">
-                <p class="field-name">Number of AIDS Beds</p>
+                <p class="field-name">AIDS Beds</p>
+                <p class="field-name">Alzheimer's Disease Beds</p>
+                <p class="field-name">Dialysis Beds</p>
                 <p class="bottom-data">${bedsAids}</p>
-            </div>
-            <div class="grid">
-                <p class="field-name">Number of Alzheimer's Disease Beds</p>
                 <p class="bottom-data">${bedsAlz}</p>
-            </div>
-            <div class="grid">
-                <p class="field-name">Number of Dialysis Beds</p>
                 <p class="bottom-data">${bedsDialysis}</p>
-            </div>
-            <div class="grid">
-                <p class="field-name">Number of Disabled Children/Young Adult Beds</p>
+                <p class="field-name">Disabled Children/Young Adult Beds</p>
+                <p class="field-name">Head Trauma Beds</p>
+                <p class="field-name">Hospice Beds</p>
                 <p class="bottom-data">${bedsKids}</p>
-            </div>
-            <div class="grid">
-                <p class="field-name">Number of Head Trauma Beds</p>
                 <p class="bottom-data">${bedsHeadTrauma}</p>
-            </div>
-            <div class="grid">
-                <p class="field-name">Number of Hospice Beds</p>
                 <p class="bottom-data">${bedsHospice}</p>
-            </div>
-            <div class="grid">
-                <p class="field-name">Number of Huntington's Disease Beds</p>
+                <p class="field-name">Huntington's Disease Beds</p>
+                <p class="field-name">Ventilator Beds</p>
+                <p class="field-name">Other Specialized Rehab Beds</p>
                 <p class="bottom-data">${bedsHuntington}</p>
-            </div>
-            <div class="grid">
-                <p class="field-name">Number of Ventilator Beds</p>
                 <p class="bottom-data">${bedsVent}</p>
-            </div>
-            <div class="grid">
-                <p class="field-name">Number of Other Specialized Rehab Beds</p>
                 <p class="bottom-data">${bedsSpecialtyRehab}</p>
-            </div>
         </section>
 
         <h3>Special Groups</h3>
@@ -248,3 +230,41 @@ function renderFacility(facilityName) {
         </section>
     `
 }
+
+
+{/* <div class="grid">
+<p class="field-name">Number of AIDS Beds</p>
+<p class="bottom-data">${bedsAids}</p>
+</div>
+<div class="grid">
+<p class="field-name">Number of Alzheimer's Disease Beds</p>
+<p class="bottom-data">${bedsAlz}</p>
+</div>
+<div class="grid">
+<p class="field-name">Number of Dialysis Beds</p>
+<p class="bottom-data">${bedsDialysis}</p>
+</div>
+<div class="grid">
+<p class="field-name">Number of Disabled Children/Young Adult Beds</p>
+<p class="bottom-data">${bedsKids}</p>
+</div>
+<div class="grid">
+<p class="field-name">Number of Head Trauma Beds</p>
+<p class="bottom-data">${bedsHeadTrauma}</p>
+</div>
+<div class="grid">
+<p class="field-name">Number of Hospice Beds</p>
+<p class="bottom-data">${bedsHospice}</p>
+</div>
+<div class="grid">
+<p class="field-name">Number of Huntington's Disease Beds</p>
+<p class="bottom-data">${bedsHuntington}</p>
+</div>
+<div class="grid">
+<p class="field-name">Number of Ventilator Beds</p>
+<p class="bottom-data">${bedsVent}</p>
+</div>
+<div class="grid">
+<p class="field-name">Number of Other Specialized Rehab Beds</p>
+<p class="bottom-data">${bedsSpecialtyRehab}</p>
+</div> */}
