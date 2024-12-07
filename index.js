@@ -175,47 +175,47 @@ function renderFacility(facilityName) {
                 <p class="field-name">Total Residents</p>
                 <p>${totalResidents}</p>
             </div>
-        <section>
+        </section>
 
         <h3>Special Care Units</h3>
-        <div class="col-3">
-            <div>
+        <section class="col-3">
+            <div class="grid">
                 <p class="field-name">Number of AIDS Beds</p>
-                <p>${bedsAids}</p>
+                <p class="bottom-data">${bedsAids}</p>
             </div>
-            <div>
+            <div class="grid">
                 <p class="field-name">Number of Alzheimer's Disease Beds</p>
-                <p>${bedsAlz}</p>
+                <p class="bottom-data">${bedsAlz}</p>
             </div>
-            <div>
+            <div class="grid">
                 <p class="field-name">Number of Dialysis Beds</p>
-                <p>${bedsDialysis}</p>
+                <p class="bottom-data">${bedsDialysis}</p>
             </div>
-            <div>
+            <div class="grid">
                 <p class="field-name">Number of Disabled Children/Young Adult Beds</p>
-                <p>${bedsKids}</p>
+                <p class="bottom-data">${bedsKids}</p>
             </div>
-            <div>
+            <div class="grid">
                 <p class="field-name">Number of Head Trauma Beds</p>
-                <p>${bedsHeadTrauma}</p>
+                <p class="bottom-data">${bedsHeadTrauma}</p>
             </div>
-            <div>
+            <div class="grid">
                 <p class="field-name">Number of Hospice Beds</p>
-                <p>${bedsHospice}</p>
+                <p class="bottom-data">${bedsHospice}</p>
             </div>
-            <div>
+            <div class="grid">
                 <p class="field-name">Number of Huntington's Disease Beds</p>
-                <p>${bedsHuntington}</p>
+                <p class="bottom-data">${bedsHuntington}</p>
             </div>
-            <div>
+            <div class="grid">
                 <p class="field-name">Number of Ventilator Beds</p>
-                <p>${bedsVent}</p>
+                <p class="bottom-data">${bedsVent}</p>
             </div>
-            <div>
+            <div class="grid">
                 <p class="field-name">Number of Other Specialized Rehab Beds</p>
-                <p>${bedsSpecialtyRehab}</p>
+                <p class="bottom-data">${bedsSpecialtyRehab}</p>
             </div>
-        </div>
+        </section>
 
         <h3>Special Groups</h3>
         <p class="field-name">Organized Residents' Group</p>

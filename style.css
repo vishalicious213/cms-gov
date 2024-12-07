@@ -56,6 +56,10 @@ h3 {
     gap: .1rem;
 }
 
+.grid {
+    display: grid;
+}
+
 /* SELECTION AREA */
 
 .selection-area {
@@ -109,4 +113,8 @@ main {
     background-color: #cfdfff;
     padding: .2rem;
     padding-left: .5rem;
+}
+
+.bottom-data {
+    align-self: flex-end;
 }
