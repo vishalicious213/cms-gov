@@ -8,34 +8,38 @@
     font-style: normal;
 }
 
-
 body {
     padding: .5rem;
 }
 
 .h1, h2, h3 {
     color: #004878;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .h1 {
     font-size: 1.25rem;
-    font-family: "Roboto", serif;
-    font-weight: 600;
-    font-style: normal;
 }
 
 h2 {
     font-size: 1rem;
-    font-family: "Roboto", serif;
-    font-weight: 600;
-    font-style: normal;
 }
 
 h3 {
     font-size: 1rem;
-    font-family: "Roboto", serif;
-    font-weight: 600;
-    font-style: normal;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: .25rem;
+    gap: .1rem;
 }
 
 /* SELECTION AREA */
@@ -80,4 +84,14 @@ main {
 
 #facility-info h2, #facility-info h3 {
     margin-top: 1rem;
+}
+
+#facility-info p {
+    padding-left: .5rem;
+}
+
+#facility-info .field-name {
+    background-color: #cfdfff;
+    padding: .2rem;
+    padding-left: .5rem;
 }
