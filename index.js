@@ -121,20 +121,30 @@ function renderFacility(facilityName) {
         <h2>${name}</h2>
 
         <h3>Facility Info</h3>
-        <div class="col-2">
-            <p class="field-name">Provider Number</p>
-            <p class="field-name">Certification Date</p>
-            <p>${providerNum}</p>
-            <p>${certDate}</p>
-        </div>
-        <div class="col-3a">
-            <p class="field-name">City</p>
-            <p class="field-name">State</p>
-            <p class="field-name">Zip Code</p>
-            <p>${City}</p>
-            <p>${State}</p>
-            <p>${zip}</p>
-        </div>
+        <section class="col-2">
+            <div>
+                <p class="field-name">Provider Number</p>
+                <p>${providerNum}</p>
+            </div>
+            <div>
+                <p class="field-name">Certification Date</p>
+                <p>${certDate}</p>
+            </div>
+        </section>
+        <section class="col-3a">
+            <div>
+                <p class="field-name">City</p>
+                <p>${City}</p>
+            </div>
+            <div>
+                <p class="field-name">State</p>
+                <p>${State}</p>
+            </div>
+            <div>
+                <p class="field-name">Zip Code</p>
+                <p>${zip}</p>
+            </div>
+        </section>
 
         <p class="field-name">Program Participation Code</p>
         <p>${participationCode}</p>
@@ -148,36 +158,64 @@ function renderFacility(facilityName) {
         <p>${multiFamilyName}</p>
 
         <h3>Census</h3>
-        <div class="col-2">
-            <p class="field-name">Medicare Census</p>
-            <p class="field-name">Medicaid Census</p>
-            <p>${medicareCensus}</p>
-            <p>${medicaidCensus}</p>
-            <p class="field-name">Other Census</p>
-            <p class="field-name">Total Residents</p>
-            <p>${otherCensus}</p>
-            <p>${totalResidents}</p>
-        <div>
+        <section class="col-2">
+            <div>
+                <p class="field-name">Medicare Census</p>
+                <p>${medicareCensus}</p>
+            </div>
+            <div>
+                <p class="field-name">Medicaid Census</p>
+                <p>${medicaidCensus}</p>
+            </div>
+            <div>
+                <p class="field-name">Other Census</p>
+                <p>${otherCensus}</p>
+            </div>
+            <div>
+                <p class="field-name">Total Residents</p>
+                <p>${totalResidents}</p>
+            </div>
+        <section>
 
         <h3>Special Care Units</h3>
-        <p class="field-name">Number of AIDS Beds</p>
-        <p>${bedsAids}</p>
-        <p>Number of Alzheimer's Disease Beds</p>
-        <p>${bedsAlz}</p>
-        <p class="field-name">Number of Dialysis Beds</p>
-        <p>${bedsDialysis}</p>
-        <p class="field-name">Number of Disabled Children/Young Adult Beds</p>
-        <p>${bedsKids}</p>
-        <p class="field-name">Number of Head Trauma Beds</p>
-        <p>${bedsHeadTrauma}</p>
-        <p class="field-name">Number of Hospice Beds</p>
-        <p>${bedsHospice}</p>
-        <p class="field-name">Number of Huntington's Disease Beds</p>
-        <p>${bedsHuntington}</p>
-        <p class="field-name">Number of Ventilator Beds</p>
-        <p>${bedsVent}</p>
-        <p class="field-name">Number of Other Specialized Rehab Beds</p>
-        <p>${bedsSpecialtyRehab}</p>
+        <div class="col-3">
+            <div>
+                <p class="field-name">Number of AIDS Beds</p>
+                <p>${bedsAids}</p>
+            </div>
+            <div>
+                <p class="field-name">Number of Alzheimer's Disease Beds</p>
+                <p>${bedsAlz}</p>
+            </div>
+            <div>
+                <p class="field-name">Number of Dialysis Beds</p>
+                <p>${bedsDialysis}</p>
+            </div>
+            <div>
+                <p class="field-name">Number of Disabled Children/Young Adult Beds</p>
+                <p>${bedsKids}</p>
+            </div>
+            <div>
+                <p class="field-name">Number of Head Trauma Beds</p>
+                <p>${bedsHeadTrauma}</p>
+            </div>
+            <div>
+                <p class="field-name">Number of Hospice Beds</p>
+                <p>${bedsHospice}</p>
+            </div>
+            <div>
+                <p class="field-name">Number of Huntington's Disease Beds</p>
+                <p>${bedsHuntington}</p>
+            </div>
+            <div>
+                <p class="field-name">Number of Ventilator Beds</p>
+                <p>${bedsVent}</p>
+            </div>
+            <div>
+                <p class="field-name">Number of Other Specialized Rehab Beds</p>
+                <p>${bedsSpecialtyRehab}</p>
+            </div>
+        </div>
 
         <h3>Special Groups</h3>
         <p class="field-name">Organized Residents' Group</p>
