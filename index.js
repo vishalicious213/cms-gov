@@ -148,14 +148,16 @@ function renderFacility(facilityName) {
         <p>${multiFamilyName}</p>
 
         <h3>Census</h3>
-        <p>Medicare Census</p>
-        <p>${medicareCensus}</p>
-        <p>Medicaid Census</p>
-        <p>${medicaidCensus}</p>
-        <p>Other Census</p>
-        <p>${otherCensus}</p>
-        <p>Total Residents</p>
-        <p>${totalResidents}</p>
+        <div class="col-2">
+            <p class="field-name">Medicare Census</p>
+            <p class="field-name">Medicaid Census</p>
+            <p>${medicareCensus}</p>
+            <p>${medicaidCensus}</p>
+            <p class="field-name">Other Census</p>
+            <p class="field-name">Total Residents</p>
+            <p>${otherCensus}</p>
+            <p>${totalResidents}</p>
+        <div>
 
         <h3>Special Care Units</h3>
         <p>Number of AIDS Beds</p>
