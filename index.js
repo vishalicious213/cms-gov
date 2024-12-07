@@ -16,8 +16,24 @@ selectionArea.addEventListener("click", function(e) {
     }
 })
 
+selectionArea.addEventListener("touchend", function(e) {
+    if (e.target.id === "dataset") {
+        selectSelectionArea(e.target.value)
+    }
+
+    if (e.target.id === "state") {
+        render671(e.target.value)
+    }
+})
+
 // render facility when selected from facility list
 mainArea.addEventListener("click", function(e) {
+    if (e.target.id === "facility-list") {
+        renderFacility(e.target.value)
+    }
+})
+
+mainArea.addEventListener("touchend", function(e) {
     if (e.target.id === "facility-list") {
         renderFacility(e.target.value)
     }
