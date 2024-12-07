@@ -228,15 +228,27 @@ function renderFacility(facilityName) {
         <p>${ccrc}</p>
 
         <h3>Nurse Staffing</h3>
-        <p class="field-name">7 Day RN Waiver Date</p>
-        <p>${rnWaiverDate}</p>
-        <p class="field-name">7 Day RN Hrs Waived Per Week</p>
-        <p>${rnHours}</p>
-        <p class="field-name">24 Hr Licensed Nursing Waiver Date</p>
-        <p>${nursingWaiverDate}</p>
-        <p class="field-name">24 Hr Licensed Nursing Hrs Waived Per Week</p>
-        <p>${nursingHours}</p>
-        <p class="field-name">Nurse Aide Training and Competency Evaluation Program</p>
-        <p>${aideTraining}</p>
+        <section class="col-2">
+            <div>
+                <p class="field-name">7 Day RN Waiver Date</p>
+                <p>${rnWaiverDate}</p>
+            </div>
+            <div>
+                <p class="field-name">7 Day RN Hrs Waived Per Week</p>
+                <p>${rnHours}</p>
+            </div>
+            <div>
+                <p class="field-name">24 Hr Licensed Nursing Waiver Date</p>
+                <p>${nursingWaiverDate}</p>
+            </div>
+            <div>
+                <p class="field-name">24 Hr Licensed Nursing Hrs Waived Per Week</p>
+                <p>${nursingHours}</p>
+            </div>
+            <div>
+                <p class="field-name">Nurse Aide Training and Competency Evaluation Program</p>
+                <p>${aideTraining}</p>
+            </div>
+        </section>
     `
 }
