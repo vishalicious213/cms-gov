@@ -125,12 +125,30 @@ main {
 
 /* MEDIA QUERIES */
 
+@media only screen and (min-width: 400px) {
+    #facility-list, #facility-list option {
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #facility-list, #facility-list option, .selection-area option {
+        font-size: .8rem;
+    }
+}
+
 @media only screen and (min-width: 550px) {
     .col-2-550 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-bottom: .25rem;
         gap: .1rem;
+    }
+}
+
+@media only screen and (min-width: 610px) {
+    #facility-list, #facility-list option, .selection-area option {
+        font-size: .9rem;
     }
 }
 
