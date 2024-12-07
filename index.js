@@ -121,18 +121,20 @@ function renderFacility(facilityName) {
         <h2>${name}</h2>
 
         <h3>Facility Info</h3>
-        <div class="grid">
+        <div class="col-2">
             <p class="field-name">Provider Number</p>
             <p class="field-name">Certification Date</p>
             <p>${providerNum}</p>
             <p>${certDate}</p>
         </div>
-        <p>City</p>
-        <p>${City}</p>
-        <p>State</p>
-        <p>${State}</p>
-        <p>Zip Code</p>
-        <p>${zip}</p>
+        <div class="col-3a">
+            <p class="field-name">City</p>
+            <p class="field-name">State</p>
+            <p class="field-name">Zip Code</p>
+            <p>${City}</p>
+            <p>${State}</p>
+            <p>${zip}</p>
+        </div>
 
         <p>Program Participation Code</p>
         <p>${participationCode}</p>

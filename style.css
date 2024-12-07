@@ -31,13 +31,23 @@ h3 {
     font-size: 1rem;
 }
 
-.flex {
-    display: flex;
-}
-
-.grid {
+.col-2 {
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-bottom: .25rem;
+    gap: .1rem;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: .25rem;
+    gap: .1rem;
+}
+
+.col-3a {
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
     margin-bottom: .25rem;
     gap: .1rem;
 }
@@ -88,6 +98,7 @@ main {
 
 #facility-info p {
     padding-left: .5rem;
+    font-size: .9rem;
 }
 
 #facility-info .field-name {
