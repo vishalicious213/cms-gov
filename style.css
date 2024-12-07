@@ -63,6 +63,10 @@ h3 {
     font-size: .8rem;
 }
 
+.spacer {
+    margin-top: 1rem;
+}
+
 /* SELECTION AREA */
 
 .selection-area {
@@ -124,8 +128,17 @@ main {
 
 /* MEDIA QUERIES */
 
+@media only screen and (min-width: 550px) {
+    .col-2-550 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: .25rem;
+        gap: .1rem;
+    }
+}
+
 @media only screen and (min-width: 700px) {
-    .col-2-800 {
+    .col-2-700 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-bottom: .25rem;

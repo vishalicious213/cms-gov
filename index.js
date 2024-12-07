@@ -142,16 +142,28 @@ function renderFacility(facilityName) {
             </div>
         </section>
 
-        <p class="field-name">Program Participation Code</p>
-        <p>${participationCode}</p>
-        <p class="field-name">Hospital Based</p>
-        <p>${hospitalBased}</p>
-        <p class="field-name">Ownership Type</p>
-        <p>${ownership}</p>
-        <p class="field-name">Multi-Facility Organization</p>
-        <p>${multiFamilyOrg}</p>
-        <p class="field-name">Multi-Facility Organization Name</p>
-        <p>${multiFamilyName}</p>
+        <section class="col-2-550 spacer">
+            <div>
+                <p class="field-name">Program Participation Code</p>
+                <p>${participationCode}</p>
+            </div>
+            <div>
+                <p class="field-name">Hospital Based</p>
+                <p>${hospitalBased}</p>
+            </div>
+            <div>
+                <p class="field-name">Ownership Type</p>
+                <p>${ownership}</p>
+            </div>
+            <div>
+                <p class="field-name">Multi-Facility Organization</p>
+                <p>${multiFamilyOrg}</p>
+            </div>
+            <div>
+                <p class="field-name">Multi-Facility Organization Name</p>
+                <p>${multiFamilyName}</p>
+            </div>
+        </section>
 
         <h3>Census</h3>
         <section class="col-2">
@@ -196,7 +208,7 @@ function renderFacility(facilityName) {
         </section>
 
         <h3>Special Groups</h3>
-        <section class="col-2-800">
+        <section class="col-2-700">
             <div>
                 <p class="field-name">Organized Residents' Group</p>
                 <p>${residentGroup}</p>
