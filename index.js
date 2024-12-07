@@ -136,15 +136,15 @@ function renderFacility(facilityName) {
             <p>${zip}</p>
         </div>
 
-        <p>Program Participation Code</p>
+        <p class="field-name">Program Participation Code</p>
         <p>${participationCode}</p>
-        <p>Hospital Based</p>
+        <p class="field-name">Hospital Based</p>
         <p>${hospitalBased}</p>
-        <p>Ownership Type</p>
+        <p class="field-name">Ownership Type</p>
         <p>${ownership}</p>
-        <p>Multi-Facility Organization</p>
+        <p class="field-name">Multi-Facility Organization</p>
         <p>${multiFamilyOrg}</p>
-        <p>Multi-Facility Organization Name</p>
+        <p class="field-name">Multi-Facility Organization Name</p>
         <p>${multiFamilyName}</p>
 
         <h3>Census</h3>
