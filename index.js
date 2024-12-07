@@ -72,7 +72,6 @@ async function getStateFacilities(state) {
     try {
         const res = await fetch(`https://data.cms.gov/data-api/v1/dataset/510f8762-0cf7-4aa3-93ff-e13af0b3bf26/data?filter[State]=${state}&additionalProp1=%7B%7D&offset=0&size=2000`)
         const data = await res.json()
-        // console.log(data)
         facilities = data
         facilities.sort((a, b) => a["Facility Name"].localeCompare(b["Facility Name"]))
     }
@@ -86,7 +85,6 @@ async function getStateFacilities(state) {
 async function render671(state) {
     mainArea.innerHTML = ""
     await getStateFacilities(state)
-    // console.log(facilities)
 
     mainArea.innerHTML = `
         <h2>Long-Term Care Facility Characteristics from CMS Form-671</h2>
@@ -111,9 +109,7 @@ async function renderFacilityList() {
 function renderFacility(facilityName) {
     const facilityInfo = document.getElementById("facility-info")
     facilityInfo.innerHTML = ""
-    // console.log(facilityName)
     const facilityData = facilities.find(facility => facility["Facility Name"] === facilityName)
-    console.log(facilityData)
 
     const {"Facility Name": name, "Provider Number": providerNum, City, State, "Zip Code": zip, "7 Day RN Hrs Waived Per Week": rnHours, "7 Day RN Waiver Date": rnWaiverDate, "24 Hr Licensed Nursing Hrs Waived Per Week": nursingHours, "24 Hr Licensed Nursing Waiver Date": nursingWaiverDate, "Certification Date": certDate, "Continuing Care Retirement Community (CCRC)": ccrc, "Facility Conducts Experimental Research": research, "Hospital Based": hospitalBased, "Medicaid Census": medicaidCensus, "Medicare Census": medicareCensus, "Multi-Facility Organization": multiFamilyOrg, "Multi-Facility Organization Name": multiFamilyName, "Number of AIDS Beds": bedsAids, "Number of Alzheimer's Disease Beds": bedsAlz, "Number of Dialysis Beds": bedsDialysis, "Number of Disabled Children/Young Adult Beds": bedsKids, "Number of Head Trauma Beds": bedsHeadTrauma, "Number of Hospice Beds": bedsHospice, "Number of Huntington's Disease Beds": bedsHuntington, "Number of Other Specialized Rehab Beds": bedsSpecialtyRehab, "Number of Ventilator Beds": bedsVent, "Nurse Aide Training and Competency Evaluation Program": aideTraining, "Organized Family Member Group": familyGroup, "Organized Residents' Group": residentGroup, "Other Census": otherCensus, "Ownership Type": ownership, "Program Participation Code": participationCode, "Total Residents": totalResidents} = facilityData
 
