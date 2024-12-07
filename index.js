@@ -16,7 +16,7 @@ selectionArea.addEventListener("click", function(e) {
     }
 })
 
-selectionArea.addEventListener("touchend", function(e) {
+selectionArea.addEventListener("touchstart", function(e) {
     if (e.target.id === "dataset") {
         alert("touched 671")
         selectSelectionArea(e.target.value)
@@ -35,7 +35,7 @@ mainArea.addEventListener("click", function(e) {
     }
 })
 
-mainArea.addEventListener("touchend", function(e) {
+mainArea.addEventListener("touchstart", function(e) {
     if (e.target.id === "facility-list") {
         alert("touched facility")
         renderFacility(e.target.value)
