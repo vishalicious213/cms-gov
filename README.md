@@ -2,6 +2,8 @@
 
 This project makes use of data from data.cms.gov to provide information about long term care facilities (nursing homes) in the US. The data is collected from CMS (Centers for Medicare & Medicaid Services) at scheduled intervals and/or as needed.
 
+Deployed at: https://vish213-cms-gov.netlify.app/
+
 API information can be found here: https://data.cms.gov/api-docs
 
 ## Long-Term Care Facility Characteristics, CMS Form 671
