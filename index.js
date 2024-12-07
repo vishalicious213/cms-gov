@@ -142,7 +142,8 @@ function renderFacility(facilityName) {
             </div>
         </section>
 
-        <section class="col-2-550 spacer">
+        <h3>Facility Type</h3>
+        <section class="col-2-550">
             <div>
                 <p class="field-name">Program Participation Code</p>
                 <p>${participationCode}</p>
