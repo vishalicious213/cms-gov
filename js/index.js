@@ -4,6 +4,8 @@ const selectionOther = document.getElementById("selection-other")
 let states = []
 let facilities = []
 
+console.log("INDEX")
+
 // ⬇️ EVENT LISTENERS ⬇️
 
 selectionArea.addEventListener("change", function(e) {
