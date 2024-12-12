@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Term Care Facility Characteristics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="h1">Skilled Nursing Facility (SNF) All Owners</h1>
+
+    <section id="selection-area" class="selection-area">
+        <label for="dataset">Choose a dataset:</label>
+        <select name="dataset" id="dataset">
+            <option value="none"></option>
+            <option value="cms671">Long-Term Care Facility Characteristics (CMS-671)</option>
+            <option value="owners" selected>Skilled Nursing Facility (SNF) All Owners</option>
+        </select>
+        <section id="selection-other" class="selection-other"></section>
+    </section>
+
+    <main id="main"></main>
+
+    <script src="./js/owners.js"></script>
+</body>
+</html>

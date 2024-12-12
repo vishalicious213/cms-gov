@@ -4,7 +4,8 @@ const selectionOther = document.getElementById("selection-other")
 let states = []
 let facilities = []
 
-console.log("CMS-671")
+// render state selection list on page load
+selectSelectionArea("cms671")
 
 // ⬇️ EVENT LISTENERS ⬇️
 
