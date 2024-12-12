@@ -19,4 +19,8 @@ function selectSelectionArea(value) {
     if (value === "cms671") {
         window.location.href="./ltc-fc.html"
     }
+
+    if (value === "owners") {
+        window.location.href="./owners.html"
+    }
 }

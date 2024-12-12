@@ -37,6 +37,10 @@ function selectSelectionArea(value) {
     if (value === "cms671") {
         selectState()
     }
+
+    if (value === "owners") {
+        window.location.href="./owners.html"
+    }
 }
 
 async function selectState() {
