@@ -15,3 +15,20 @@ selectionArea.addEventListener("change", function(e) {
         render671(e.target.value)
     }
 })
+
+// ⬇️ EVENT HANDLERS ⬇️
+
+function selectSelectionArea(value) {
+    if (value === "none") {
+        window.location.href="./index.html"
+        selectionOther.innerHTML = ""
+    }
+
+    if (value === "cms671") {
+        window.location.href="./ltc-fc.html"
+    }
+
+    if (value === "owners") {
+        selectState()
+    }
+}
