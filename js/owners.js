@@ -4,6 +4,8 @@ const selectionOther = document.getElementById("selection-other")
 let states = []
 let facilities = []
 
+selectSelectionArea("owners")
+
 // ⬇️ EVENT LISTENERS ⬇️
 
 selectionArea.addEventListener("change", function(e) {
@@ -31,4 +33,24 @@ function selectSelectionArea(value) {
     if (value === "owners") {
         selectState()
     }
+}
+
+async function selectState() {
+    selectionOther.innerHTML = ""
+    await getStates()
+
+    selectionOther.innerHTML = `
+        <label class="label" for="state">Choose a state:</label>
+        <select name="state" id="state">
+            <option value=""></option>
+        </select>
+    `
+
+    const stateOptions = document.getElementById("state")
+    states.forEach (state => {
+        const option = document.createElement("option")
+        option.value = state
+        option.textContent = state
+        stateOptions.appendChild(option)
+    })
 }
