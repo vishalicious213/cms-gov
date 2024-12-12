@@ -54,3 +54,18 @@ async function selectState() {
         stateOptions.appendChild(option)
     })
 }
+
+// ⬇️ UTILITY FUNCTIONS ⬇️
+
+async function getStates() {
+    try {
+        // const res = await fetch("https://data.cms.gov/data-api/v1/dataset/510f8762-0cf7-4aa3-93ff-e13af0b3bf26/data?column=State&additionalProp1=%7B%7D&offset=0&size=100&distinct=1")
+        const res = await fetch("https://data.cms.gov/data-api/v1/dataset/afe44b85-cc6d-40d7-b5df-00ae8910d1d2/data")
+        const data = await res.json()
+        // states = data.map(item => item.State)
+        console.log(data)
+    }
+    catch (err) {
+        console.error("Failed to fetch states from CMS:", err)
+    }
+}
