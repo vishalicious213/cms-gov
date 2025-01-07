@@ -14,7 +14,7 @@ selectionArea.addEventListener("change", function(e) {
     }
 
     if (e.target.id === "state") {
-        getStateFacilities(e.target.value)
+        renderFacilities(e.target.value)
     }
 })
 
@@ -54,6 +54,29 @@ function selectState() {
     })
 }
 
+// ⬇️ RENDER FUNCTIONS ⬇️
+
+async function renderFacilities(state) {
+    mainArea.innerHTML = ""
+    await getStateFacilities(state)
+
+    mainArea.innerHTML = `
+        <h2>Skilled Nursing Facilities Owners</h2>
+
+        <label class="label" for="facility-list">Choose a facility:</label>
+        <select name="facility-list" id="facility-list"></select>
+        <section id="facility-info" class="facility-info"></section>
+    `
+    renderFacilityList()
+}
+
+async function renderFacilityList() {
+    const facilityList = document.getElementById("facility-list")
+    facilities.forEach (facility => {
+        console.log(facility)
+    })
+}
+
 // ⬇️ UTILITY FUNCTIONS ⬇️
 
 async function getStateFacilities(state) {
@@ -61,7 +84,15 @@ async function getStateFacilities(state) {
         const res = await fetch(`https://data.cms.gov/data-api/v1/dataset/afe44b85-cc6d-40d7-b5df-00ae8910d1d2/data?filter[STATE - OWNER]=${state}&additionalProp1=%7B%7D&offset=0&size=5000`)
         const data = await res.json()
         facilities = data
-        // facilities.sort((a, b) => a["Facility Name"].localeCompare(b["Facility Name"]))
+        facilities.sort((a, b) => {
+            const facilityName = item => 
+                item["DOING BUSINESS AS NAME - OWNER"] ||
+                item["PARENT COMPANY"] ||
+                item["PARENT COMPANY - OWNER"] ||
+                item["ORGANIZATION NAME"]
+
+            return facilityName(a).localeCompare(facilityName(b))
+        })
         console.log(facilities)
     }
     catch (err) {
