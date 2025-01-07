@@ -72,8 +72,16 @@ async function renderFacilities(state) {
 
 async function renderFacilityList() {
     const facilityList = document.getElementById("facility-list")
+
+    const facilityCount = facilities.reduce((acc, item) => {
+        acc[item["ASSOCIATE ID"]] = (acc[item["ASSOCIATE ID"]] || 0) + 1
+        return acc
+    }, {})
+
+    console.log(facilityCount)
+
     facilities.forEach (facility => {
-        console.log(facility)
+        // console.log(facility)
     })
 }
 
