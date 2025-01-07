@@ -14,7 +14,7 @@ selectionArea.addEventListener("change", function(e) {
     }
 
     if (e.target.id === "state") {
-        render671(e.target.value)
+        getStateFacilities(e.target.value)
     }
 })
 
@@ -35,9 +35,8 @@ function selectSelectionArea(value) {
     }
 }
 
-async function selectState() {
+function selectState() {
     selectionOther.innerHTML = ""
-    // await getStates()
 
     selectionOther.innerHTML = `
         <label class="label" for="state">Choose a state:</label>
@@ -57,15 +56,15 @@ async function selectState() {
 
 // ⬇️ UTILITY FUNCTIONS ⬇️
 
-async function getStates() {
+async function getStateFacilities(state) {
     try {
-        // const res = await fetch("https://data.cms.gov/data-api/v1/dataset/510f8762-0cf7-4aa3-93ff-e13af0b3bf26/data?column=State&additionalProp1=%7B%7D&offset=0&size=100&distinct=1")
-        const res = await fetch("https://data.cms.gov/data-api/v1/dataset/afe44b85-cc6d-40d7-b5df-00ae8910d1d2/data")
+        const res = await fetch(`https://data.cms.gov/data-api/v1/dataset/afe44b85-cc6d-40d7-b5df-00ae8910d1d2/data?filter[STATE - OWNER]=${state}&additionalProp1=%7B%7D&offset=0&size=5000`)
         const data = await res.json()
-        // states = data.map(item => item.State)
-        console.log(data)
+        facilities = data
+        // facilities.sort((a, b) => a["Facility Name"].localeCompare(b["Facility Name"]))
+        console.log(facilities)
     }
     catch (err) {
-        console.error("Failed to fetch states from CMS:", err)
+        console.error("Failed to fetch state facilities from CMS:", err)
     }
 }
