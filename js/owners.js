@@ -73,15 +73,40 @@ async function renderFacilities(state) {
 async function renderFacilityList() {
     const facilityList = document.getElementById("facility-list")
 
-    const facilityCount = facilities.reduce((acc, item) => {
-        acc[item["ASSOCIATE ID"]] = (acc[item["ASSOCIATE ID"]] || 0) + 1
-        return acc
-    }, {})
+    const uniqueFacilities = Array.from (
+        facilities.reduce((facilityOptions, facility) => {
+            const key = facility["ASSOCIATE ID"]
+            if (!facilityOptions.has(key)) facilityOptions.set(key, facility)
+            return facilityOptions
+        }, new Map()).values()
+    )
 
-    console.log(facilityCount)
+    console.log(uniqueFacilities)
 
-    facilities.forEach (facility => {
-        // console.log(facility)
+    // const facilityCount = facilities.reduce((acc, item) => {
+    //     acc[item["ASSOCIATE ID"]] = (acc[item["ASSOCIATE ID"]] || 0) + 1
+    //     return acc
+    // }, {})
+
+    // console.log(Object.keys(facilityCount).length, facilityCount)
+
+    // facilities.forEach (facility => {
+    //     if (facilityCount[facility["ASSOCIATE ID"]] === 1) {
+    //         console.log(facility["ASSOCIATE ID"])
+    //     } else {
+    //         console.log(facility["ASSOCIATE ID"], facilityCount[facility["ASSOCIATE ID"]])
+    //     }
+    //     // console.log(facility)
+    // })
+
+    uniqueFacilities.forEach (facility => {
+        const option = document.createElement("option")
+        option.value = facility["ASSOCIATE ID"]
+        option.textContent = facility["DOING BUSINESS AS NAME - OWNER"] ||
+            facility["PARENT COMPANY"] ||
+            facility["PARENT COMPANY - OWNER"] ||
+            facility["ORGANIZATION NAME"]
+        facilityList.appendChild(option)
     })
 }
 
