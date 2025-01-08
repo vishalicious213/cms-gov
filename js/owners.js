@@ -122,6 +122,14 @@ function renderFacility(facilityId) {
     facilityInfo.innerHTML = ""
     const facilityData = facilities.find(facility => facility["ASSOCIATE ID"] === facilityId)
 
+    const {"ENROLLMENT ID": enrollmentId, "ASSOCIATE ID": associateId, "ORGANIZATION NAME": orgName} = facilityData
+
+    facilityInfo.innerHTML = `
+        <p>${enrollmentId}</p>
+        <p>${associateId}</p>
+        <p>${orgName}</p>
+    `
+
     console.log(facilityData)
 }
 
