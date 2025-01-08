@@ -18,6 +18,13 @@ selectionArea.addEventListener("change", function(e) {
     }
 })
 
+// render facility when selected from facility list
+mainArea.addEventListener("change", function(e) {
+    if (e.target.id === "facility-list") {
+        renderFacility(e.target.value)
+    }
+})
+
 // ⬇️ EVENT HANDLERS ⬇️
 
 function selectSelectionArea(value) {
@@ -83,6 +90,16 @@ async function renderFacilityList() {
 
     console.log(uniqueFacilities)
 
+    uniqueFacilities.forEach (facility => {
+        const option = document.createElement("option")
+        option.value = facility["ASSOCIATE ID"]
+        option.textContent = facility["DOING BUSINESS AS NAME - OWNER"] ||
+            facility["PARENT COMPANY"] ||
+            facility["PARENT COMPANY - OWNER"] ||
+            facility["ORGANIZATION NAME"]
+        facilityList.appendChild(option)
+    })
+
     // const facilityCount = facilities.reduce((acc, item) => {
     //     acc[item["ASSOCIATE ID"]] = (acc[item["ASSOCIATE ID"]] || 0) + 1
     //     return acc
@@ -98,16 +115,14 @@ async function renderFacilityList() {
     //     }
     //     // console.log(facility)
     // })
+}
 
-    uniqueFacilities.forEach (facility => {
-        const option = document.createElement("option")
-        option.value = facility["ASSOCIATE ID"]
-        option.textContent = facility["DOING BUSINESS AS NAME - OWNER"] ||
-            facility["PARENT COMPANY"] ||
-            facility["PARENT COMPANY - OWNER"] ||
-            facility["ORGANIZATION NAME"]
-        facilityList.appendChild(option)
-    })
+function renderFacility(facilityId) {
+    const facilityInfo = document.getElementById("facility-info")
+    facilityInfo.innerHTML = ""
+    const facilityData = facilities.find(facility => facility["ASSOCIATE ID"] === facilityId)
+
+    console.log(facilityData)
 }
 
 // ⬇️ UTILITY FUNCTIONS ⬇️
