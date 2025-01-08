@@ -122,12 +122,17 @@ function renderFacility(facilityId) {
     facilityInfo.innerHTML = ""
     const facilityData = facilities.find(facility => facility["ASSOCIATE ID"] === facilityId)
 
-    const {"ENROLLMENT ID": enrollmentId, "ASSOCIATE ID": associateId, "ORGANIZATION NAME": orgName} = facilityData
+    const {"ENROLLMENT ID": enrollmentId, "ASSOCIATE ID": associateId, "ORGANIZATION NAME": orgName, "ASSOCIATE ID - OWNER": ownerAssociateId, "TYPE - OWNER": ownerType, "ROLE CODE - OWNER": ownerRoleCode, "ROLE TEXT - OWNER": ownerRoleText, "ASSOCIATION DATE - OWNER": ownerAssocDate} = facilityData
 
     facilityInfo.innerHTML = `
-        <p>${enrollmentId}</p>
-        <p>${associateId}</p>
-        <p>${orgName}</p>
+        <p>Enrollment ID: ${enrollmentId}</p>
+        <p>Associate ID: ${associateId}</p>
+        <p>Organization Name: ${orgName}</p>
+        <p>Owner Associate ID: ${ownerAssociateId}</p>
+        <p>Owner Type: ${ownerType}</p>
+        <p>Owner Role Code: ${ownerRoleCode}</p>
+        <p>Owner Role Text: ${ownerRoleText}</p>
+        <p>Owner Association Date: ${ownerAssocDate}</p>
     `
 
     console.log(facilityData)
