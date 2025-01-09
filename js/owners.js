@@ -128,11 +128,13 @@ function renderFacility(facilityId) {
         <section class="owner-section">
             <p>Enrollment ID: ${enrollmentId}</p>
             <p>Associate ID: ${associateId}</p>
-            <p>Organization Name: ${orgName}</p>
+            <p>Organization Name:</p>
+            <p>${orgName}</p>
             <p>Owner Associate ID: ${ownerAssociateId}</p>
             <p>Owner Type: ${ownerType}</p>
             <p>Owner Role Code: ${ownerRoleCode}</p>
-            <p>Owner Role Text: ${ownerRoleText}</p>
+            <p>Owner Role Text:</p>
+            <p>${ownerRoleText}</p>
             <p>Owner Association Date: ${ownerAssocDate}</p>
         </section>
 
@@ -144,8 +146,10 @@ function renderFacility(facilityId) {
         </section>
 
         <section class="owner-section">
-            <p>Owner Organization Name: ${ownerOrgName}</p>
-            <p>Doing Business As: ${dbaName}</p>
+            <p>Owner Organization Name:</p>
+            <p>${ownerOrgName}</p>
+            <p>Doing Business As:</p>
+            <p>${dbaName}</p>
             <p>Address line 1: ${address1}</p>
             <p>Address line 2: ${address2}</p>
             <p>City: ${city}</p>
