@@ -123,11 +123,12 @@ function renderFacility(facilityId) {
     const facilityName = facilityList.options[facilityList.selectedIndex].text
     const facilityData = facilities.find(facility => facility["ASSOCIATE ID"] === facilityId)
     facilityInfo.innerHTML = ""
-    console.log(facilityName)
+    // console.log(facilityName)
 
     const {"ENROLLMENT ID": enrollmentId, "ASSOCIATE ID": associateId, "ORGANIZATION NAME": orgName, "ASSOCIATE ID - OWNER": ownerAssociateId, "TYPE - OWNER": ownerType, "ROLE CODE - OWNER": ownerRoleCode, "ROLE TEXT - OWNER": ownerRoleText, "ASSOCIATION DATE - OWNER": ownerAssocDate, "FIRST NAME - OWNER": firstName, "MIDDLE NAME - OWNER": midName, "LAST NAME - OWNER": lastName, "TITLE - OWNER": ownerTitle, "ORGANIZATION NAME - OWNER": ownerOrgName, "DOING BUSINESS AS NAME - OWNER": dbaName, "ADDRESS LINE 1 - OWNER": address1, "ADDRESS LINE 2 - OWNER": address2, "CITY - OWNER": city, "STATE - OWNER": state, "ZIP CODE - OWNER": zipCode, "PERCENTAGE OWNERSHIP": percentage, "CREATED FOR ACQUISITION - OWNER": acquisition, "CORPORATION - OWNER": corporation, "LLC - OWNER": llc, "MEDICAL PROVIDER SUPPLIER - OWNER": medProviderSupplier, "MANAGEMENT SERVICES COMPANY - OWNER": mgmtServicesCo, "MEDICAL STAFFING COMPANY - OWNER": medStaffCo, "HOLDING COMPANY - OWNER": holdingCo, "INVESTMENT FIRM - OWNER": investingFirm, "FINANCIAL INSTITUTION - OWNER": financialInst, "CONSULTING FIRM - OWNER": consultingFirm, "FOR PROFIT - OWNER": forProfit, "NON PROFIT - OWNER": nonProfit, "PRIVATE EQUITY COMPANY - OWNER": privateEquityCo, "REIT - OWNER": reit, "CHAIN HOME OFFICE - OWNER": chainHomeOffice, "TRUST OR TRUSTEE - OWNER": trust, "OTHER TYPE - OWNER": otherType, "OTHER TYPE TEXT - OWNER": otherTypeText, "PARENT COMPANY - OWNER": parentCo, "OWNED BY ANOTHER ORG OR IND - OWNER": otherOwner} = facilityData
 
     facilityInfo.innerHTML = `
+        <h2>${facilityName}</h2>
         <section class="owner-section">
             <p>Enrollment ID: ${enrollmentId}</p>
             <p>Associate ID: ${associateId}</p>
