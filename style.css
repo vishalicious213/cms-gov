@@ -133,6 +133,20 @@ main {
     border-bottom: 1px solid black;
 }
 
+.owner-type-details {
+    display: flex;
+    flex-wrap: wrap;
+    outline: 1px solid orange;
+    justify-content: space-around;
+    gap: .25rem;
+}
+
+.owner-type-details div {
+    border: 1px solid black;
+    width: 49%;
+    text-align: center;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 400px) {

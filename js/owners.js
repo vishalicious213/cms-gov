@@ -99,22 +99,6 @@ async function renderFacilityList() {
             facility["ORGANIZATION NAME"]
         facilityList.appendChild(option)
     })
-
-    // const facilityCount = facilities.reduce((acc, item) => {
-    //     acc[item["ASSOCIATE ID"]] = (acc[item["ASSOCIATE ID"]] || 0) + 1
-    //     return acc
-    // }, {})
-
-    // console.log(Object.keys(facilityCount).length, facilityCount)
-
-    // facilities.forEach (facility => {
-    //     if (facilityCount[facility["ASSOCIATE ID"]] === 1) {
-    //         console.log(facility["ASSOCIATE ID"])
-    //     } else {
-    //         console.log(facility["ASSOCIATE ID"], facilityCount[facility["ASSOCIATE ID"]])
-    //     }
-    //     // console.log(facility)
-    // })
 }
 
 function renderFacility(facilityId) {
@@ -123,7 +107,6 @@ function renderFacility(facilityId) {
     const facilityName = facilityList.options[facilityList.selectedIndex].text
     const facilityData = facilities.find(facility => facility["ASSOCIATE ID"] === facilityId)
     facilityInfo.innerHTML = ""
-    // console.log(facilityName)
 
     const {"ENROLLMENT ID": enrollmentId, "ASSOCIATE ID": associateId, "ORGANIZATION NAME": orgName, "ASSOCIATE ID - OWNER": ownerAssociateId, "TYPE - OWNER": ownerType, "ROLE CODE - OWNER": ownerRoleCode, "ROLE TEXT - OWNER": ownerRoleText, "ASSOCIATION DATE - OWNER": ownerAssocDate, "FIRST NAME - OWNER": firstName, "MIDDLE NAME - OWNER": midName, "LAST NAME - OWNER": lastName, "TITLE - OWNER": ownerTitle, "ORGANIZATION NAME - OWNER": ownerOrgName, "DOING BUSINESS AS NAME - OWNER": dbaName, "ADDRESS LINE 1 - OWNER": address1, "ADDRESS LINE 2 - OWNER": address2, "CITY - OWNER": city, "STATE - OWNER": state, "ZIP CODE - OWNER": zipCode, "PERCENTAGE OWNERSHIP": percentage, "CREATED FOR ACQUISITION - OWNER": acquisition, "CORPORATION - OWNER": corporation, "LLC - OWNER": llc, "MEDICAL PROVIDER SUPPLIER - OWNER": medProviderSupplier, "MANAGEMENT SERVICES COMPANY - OWNER": mgmtServicesCo, "MEDICAL STAFFING COMPANY - OWNER": medStaffCo, "HOLDING COMPANY - OWNER": holdingCo, "INVESTMENT FIRM - OWNER": investingFirm, "FINANCIAL INSTITUTION - OWNER": financialInst, "CONSULTING FIRM - OWNER": consultingFirm, "FOR PROFIT - OWNER": forProfit, "NON PROFIT - OWNER": nonProfit, "PRIVATE EQUITY COMPANY - OWNER": privateEquityCo, "REIT - OWNER": reit, "CHAIN HOME OFFICE - OWNER": chainHomeOffice, "TRUST OR TRUSTEE - OWNER": trust, "OTHER TYPE - OWNER": otherType, "OTHER TYPE TEXT - OWNER": otherTypeText, "PARENT COMPANY - OWNER": parentCo, "OWNED BY ANOTHER ORG OR IND - OWNER": otherOwner} = facilityData
 
@@ -178,22 +161,58 @@ function renderFacility(facilityId) {
 
         <section class="owner-section">
             <h3>Organizational Owner Type Details</h3>
-            <p>Created for Acquisition: ${acquisition}</p>
-            <p>Corporation: ${corporation}</p>
-            <p>LLC: ${llc}</p>
-            <p>Medical Provider Supplier: ${medProviderSupplier}</p>
-            <p>Management Services Company: ${mgmtServicesCo}</p>
-            <p>Medical Staffing Company: ${medStaffCo}</p>
-            <p>Holding Company: ${holdingCo}</p>
-            <p>Investment Firm: ${investingFirm}</p>
-            <p>Financial Institution: ${financialInst}</p>
-            <p>Consulting Firm: ${consultingFirm}</p>
-            <p>For Profit: ${forProfit}</p>
-            <p>Non Profit: ${nonProfit}</p>
-            <p>Private Equity Company: ${privateEquityCo}</p>
-            <p>REIT: ${reit}</p>
-            <p>Chain Home Office: ${chainHomeOffice}</p>
-            <p>Trust/Trustee: ${trust}</p>
+            <section class="owner-type-details">
+                <div>
+                    <p>Created for Acquisition:</p>
+                    <p>${acquisition}</p>
+                </div>
+                <div>
+                    <p>Corporation:</p>
+                    <p>${corporation}</p>
+                </div>
+                <div>
+                    <p>LLC: ${llc}</p>
+                </div>
+                <div>
+                    <p>Medical Provider Supplier: ${medProviderSupplier}</p>
+                </div>
+                <div>
+                    <p>Management Services Company: ${mgmtServicesCo}</p>
+                </div>
+                <div>
+                    <p>Medical Staffing Company: ${medStaffCo}</p>
+                </div>
+                <div>
+                    <p>Holding Company: ${holdingCo}</p>
+                </div>
+                <div>
+                    <p>Investment Firm: ${investingFirm}</p>
+                </div>
+                <div>
+                    <p>Financial Institution: ${financialInst}</p>
+                </div>
+                <div>
+                    <p>Consulting Firm: ${consultingFirm}</p>
+                </div>
+                <div>
+                    <p>For Profit: ${forProfit}</p>
+                </div>
+                <div>
+                    <p>Non Profit: ${nonProfit}</p>
+                </div>
+                <div>
+                    <p>Private Equity Company: ${privateEquityCo}</p>
+                </div>
+                <div>
+                    <p>REIT: ${reit}</p>
+                </div>
+                <div>
+                    <p>Chain Home Office: ${chainHomeOffice}</p>
+                </div>
+                <div>
+                    <p>Trust/Trustee: ${trust}</p>
+                </div>
+            </section>
             <p>Other Type: ${otherType}</p>
             <p>Other Type Text: ${otherTypeText}</p>
             <div>
