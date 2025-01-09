@@ -179,7 +179,7 @@ function renderFacility(facilityId) {
                     <p>${medProviderSupplier}</p>
                 </div>
                 <div>
-                    <p>Management Services Company:</p>
+                    <p>Mgmt Services Company:</p>
                     <p>${mgmtServicesCo}</p>
                 </div>
                 <div>

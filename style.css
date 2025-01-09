@@ -138,13 +138,17 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: .25rem;
+    margin-bottom: .5rem;
 }
 
 .owner-type-details div {
     border: 1px solid #004878;
     border-radius: .33rem;
-    width: 49%;
+    width: 140px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* MEDIA QUERIES */
