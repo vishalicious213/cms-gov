@@ -128,13 +128,17 @@ function renderFacility(facilityId) {
         <section class="owner-section">
             <p>Enrollment ID: ${enrollmentId}</p>
             <p>Associate ID: ${associateId}</p>
-            <p>Organization Name:</p>
-            <p>${orgName}</p>
+            <div>
+                <p>Organization Name:</p>
+                <p>${orgName}</p>
+            </div>
             <p>Owner Associate ID: ${ownerAssociateId}</p>
             <p>Owner Type: ${ownerType}</p>
             <p>Owner Role Code: ${ownerRoleCode}</p>
-            <p>Owner Role Text:</p>
-            <p>${ownerRoleText}</p>
+            <div>
+                <p>Owner Role Text:</p>
+                <p>${ownerRoleText}</p>
+            </div>
             <p>Owner Association Date: ${ownerAssocDate}</p>
         </section>
 
@@ -146,10 +150,14 @@ function renderFacility(facilityId) {
         </section>
 
         <section class="owner-section">
-            <p>Owner Organization Name:</p>
-            <p>${ownerOrgName}</p>
-            <p>Doing Business As:</p>
-            <p>${dbaName}</p>
+            <div>
+                <p>Owner Organization Name:</p>
+                <p>${ownerOrgName}</p>
+            </div>
+            <div>
+                <p>Doing Business As:</p>
+                <p>${dbaName}</p>
+            </div>
             <p>Address line 1: ${address1}</p>
             <p>Address line 2: ${address2}</p>
             <p>City: ${city}</p>
@@ -177,7 +185,10 @@ function renderFacility(facilityId) {
             <p>Trust/Trustee: ${trust}</p>
             <p>Other Type: ${otherType}</p>
             <p>Other Type Text: ${otherTypeText}</p>
-            <p>Parent Company: ${parentCo}</p>
+            <div>
+                <p>Parent Company:</p>
+                <p>${parentCo}</p>
+            </div>
             <p>Owned by Other Org/Ind: ${otherOwner}</p>
         </section>
     `
