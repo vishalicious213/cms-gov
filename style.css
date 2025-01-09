@@ -136,13 +136,13 @@ main {
 .owner-type-details {
     display: flex;
     flex-wrap: wrap;
-    outline: 1px solid orange;
     justify-content: space-around;
     gap: .25rem;
 }
 
 .owner-type-details div {
-    border: 1px solid black;
+    border: 1px solid #004878;
+    border-radius: .33rem;
     width: 49%;
     text-align: center;
 }

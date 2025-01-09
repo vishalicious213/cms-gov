@@ -171,32 +171,32 @@ function renderFacility(facilityId) {
                     <p>${corporation}</p>
                 </div>
                 <div>
-                    <p>LLC: ${llc}</p>
-                    <p>LLC: ${llc}</p>
+                    <p>LLC:</p>
+                    <p>${llc}</p>
                 </div>
                 <div>
-                    <p>Medical Provider Supplier: ${medProviderSupplier}</p>
-                    <p>Medical Provider Supplier: ${medProviderSupplier}</p>
+                    <p>Medical Provider Supplier:</p>
+                    <p>${medProviderSupplier}</p>
                 </div>
                 <div>
-                    <p>Management Services Company: ${mgmtServicesCo}</p>
-                    <p>Management Services Company: ${mgmtServicesCo}</p>
+                    <p>Management Services Company:</p>
+                    <p>${mgmtServicesCo}</p>
                 </div>
                 <div>
-                    <p>Medical Staffing Company: ${medStaffCo}</p>
-                    <p>Medical Staffing Company: ${medStaffCo}</p>
+                    <p>Medical Staffing Company:</p>
+                    <p>${medStaffCo}</p>
                 </div>
                 <div>
-                    <p>Holding Company: ${holdingCo}</p>
-                    <p>Holding Company: ${holdingCo}</p>
+                    <p>Holding Company:</p>
+                    <p>${holdingCo}</p>
                 </div>
                 <div>
-                    <p>Investment Firm: ${investingFirm}</p>
-                    <p>Investment Firm: ${investingFirm}</p>
+                    <p>Investment Firm:</p>
+                    <p>${investingFirm}</p>
                 </div>
                 <div>
-                    <p>Financial Institution: ${financialInst}</p>
-                    <p>Financial Institution: ${financialInst}</p>
+                    <p>Financial Institution:</p>
+                    <p>${financialInst}</p>
                 </div>
                 <div>
                     <p>Consulting Firm:</p>
