@@ -132,6 +132,10 @@ function renderFacility(facilityId) {
                 <p>Organization Name:</p>
                 <p>${orgName}</p>
             </div>
+        </section>
+
+        <section class="owner-section">
+            <h3>Owner Type & Identification</h3>
             <p>Owner Associate ID: ${ownerAssociateId}</p>
             <p>Owner Type: ${ownerType}</p>
             <p>Owner Role Code: ${ownerRoleCode}</p>
@@ -143,6 +147,7 @@ function renderFacility(facilityId) {
         </section>
 
         <section class="owner-section">
+            <h3>Individual Owner</h3>
             <p>Owner First Name: ${firstName}</p>
             <p>Owner Middle Name: ${midName}</p>
             <p>Owner Last Name: ${lastName}</p>
@@ -150,8 +155,9 @@ function renderFacility(facilityId) {
         </section>
 
         <section class="owner-section">
+            <h3>Organizational Owner</h3>
             <div>
-                <p>Owner Organization Name:</p>
+                <p>Organization Owner Name:</p>
                 <p>${ownerOrgName}</p>
             </div>
             <div>
@@ -167,6 +173,7 @@ function renderFacility(facilityId) {
         </section>
 
         <section class="owner-section">
+            <h3>Organizational Owner Type Details</h3>
             <p>Created for Acquisition: ${acquisition}</p>
             <p>Corporation: ${corporation}</p>
             <p>LLC: ${llc}</p>
