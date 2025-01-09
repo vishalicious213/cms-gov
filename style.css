@@ -123,6 +123,12 @@ main {
     align-self: flex-end;
 }
 
+/* OWNER TOOL */
+
+.owner-section {
+    margin-top: 1rem;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 400px) {

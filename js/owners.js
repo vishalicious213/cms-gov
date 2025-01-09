@@ -125,46 +125,57 @@ function renderFacility(facilityId) {
     const {"ENROLLMENT ID": enrollmentId, "ASSOCIATE ID": associateId, "ORGANIZATION NAME": orgName, "ASSOCIATE ID - OWNER": ownerAssociateId, "TYPE - OWNER": ownerType, "ROLE CODE - OWNER": ownerRoleCode, "ROLE TEXT - OWNER": ownerRoleText, "ASSOCIATION DATE - OWNER": ownerAssocDate, "FIRST NAME - OWNER": firstName, "MIDDLE NAME - OWNER": midName, "LAST NAME - OWNER": lastName, "TITLE - OWNER": ownerTitle, "ORGANIZATION NAME - OWNER": ownerOrgName, "DOING BUSINESS AS NAME - OWNER": dbaName, "ADDRESS LINE 1 - OWNER": address1, "ADDRESS LINE 2 - OWNER": address2, "CITY - OWNER": city, "STATE - OWNER": state, "ZIP CODE - OWNER": zipCode, "PERCENTAGE OWNERSHIP": percentage, "CREATED FOR ACQUISITION - OWNER": acquisition, "CORPORATION - OWNER": corporation, "LLC - OWNER": llc, "MEDICAL PROVIDER SUPPLIER - OWNER": medProviderSupplier, "MANAGEMENT SERVICES COMPANY - OWNER": mgmtServicesCo, "MEDICAL STAFFING COMPANY - OWNER": medStaffCo, "HOLDING COMPANY - OWNER": holdingCo, "INVESTMENT FIRM - OWNER": investingFirm, "FINANCIAL INSTITUTION - OWNER": financialInst, "CONSULTING FIRM - OWNER": consultingFirm, "FOR PROFIT - OWNER": forProfit, "NON PROFIT - OWNER": nonProfit, "PRIVATE EQUITY COMPANY - OWNER": privateEquityCo, "REIT - OWNER": reit, "CHAIN HOME OFFICE - OWNER": chainHomeOffice, "TRUST OR TRUSTEE - OWNER": trust, "OTHER TYPE - OWNER": otherType, "OTHER TYPE TEXT - OWNER": otherTypeText, "PARENT COMPANY - OWNER": parentCo, "OWNED BY ANOTHER ORG OR IND - OWNER": otherOwner} = facilityData
 
     facilityInfo.innerHTML = `
-        <p>Enrollment ID: ${enrollmentId}</p>
-        <p>Associate ID: ${associateId}</p>
-        <p>Organization Name: ${orgName}</p>
-        <p>Owner Associate ID: ${ownerAssociateId}</p>
-        <p>Owner Type: ${ownerType}</p>
-        <p>Owner Role Code: ${ownerRoleCode}</p>
-        <p>Owner Role Text: ${ownerRoleText}</p>
-        <p>Owner Association Date: ${ownerAssocDate}</p>
-        <p>Owner First Name: ${firstName}</p>
-        <p>Owner Middle Name: ${midName}</p>
-        <p>Owner Last Name: ${lastName}</p>
-        <p>Owner Title: ${ownerTitle}</p>
-        <p>Owner Organization Name: ${ownerOrgName}</p>
-        <p>Doing Business As: ${dbaName}</p>
-        <p>Address line 1: ${address1}</p>
-        <p>Address line 2: ${address2}</p>
-        <p>City: ${city}</p>
-        <p>State: ${state}</p>
-        <p>Zip Code: ${zipCode}</p>
-        <p>Percentage Ownership: ${percentage}</p>
-        <p>Created for Acquisition: ${acquisition}</p>
-        <p>Corporation: ${corporation}</p>
-        <p>LLC: ${llc}</p>
-        <p>Medical Provider Supplier: ${medProviderSupplier}</p>
-        <p>Management Services Company: ${mgmtServicesCo}</p>
-        <p>Medical Staffing Company: ${medStaffCo}</p>
-        <p>Holding Company: ${holdingCo}</p>
-        <p>Investment Firm: ${investingFirm}</p>
-        <p>Financial Institution: ${financialInst}</p>
-        <p>Consulting Firm: ${consultingFirm}</p>
-        <p>For Profit: ${forProfit}</p>
-        <p>Non Profit: ${nonProfit}</p>
-        <p>Private Equity Company: ${privateEquityCo}</p>
-        <p>REIT: ${reit}</p>
-        <p>Chain Home Office: ${chainHomeOffice}</p>
-        <p>Trust/Trustee: ${trust}</p>
-        <p>Other Type: ${otherType}</p>
-        <p>Other Type Text: ${otherTypeText}</p>
-        <p>Parent Company: ${parentCo}</p>
-        <p>Owned by Other Org/Ind: ${otherOwner}</p>
+        <section class="owner-section">
+            <p>Enrollment ID: ${enrollmentId}</p>
+            <p>Associate ID: ${associateId}</p>
+            <p>Organization Name: ${orgName}</p>
+            <p>Owner Associate ID: ${ownerAssociateId}</p>
+            <p>Owner Type: ${ownerType}</p>
+            <p>Owner Role Code: ${ownerRoleCode}</p>
+            <p>Owner Role Text: ${ownerRoleText}</p>
+            <p>Owner Association Date: ${ownerAssocDate}</p>
+        </section>
+
+        <section class="owner-section">
+            <p>Owner First Name: ${firstName}</p>
+            <p>Owner Middle Name: ${midName}</p>
+            <p>Owner Last Name: ${lastName}</p>
+            <p>Owner Title: ${ownerTitle}</p>
+        </section>
+
+        <section class="owner-section">
+            <p>Owner Organization Name: ${ownerOrgName}</p>
+            <p>Doing Business As: ${dbaName}</p>
+            <p>Address line 1: ${address1}</p>
+            <p>Address line 2: ${address2}</p>
+            <p>City: ${city}</p>
+            <p>State: ${state}</p>
+            <p>Zip Code: ${zipCode}</p>
+            <p>Percentage Ownership: ${percentage}</p>
+        </section>
+
+        <section class="owner-section">
+            <p>Created for Acquisition: ${acquisition}</p>
+            <p>Corporation: ${corporation}</p>
+            <p>LLC: ${llc}</p>
+            <p>Medical Provider Supplier: ${medProviderSupplier}</p>
+            <p>Management Services Company: ${mgmtServicesCo}</p>
+            <p>Medical Staffing Company: ${medStaffCo}</p>
+            <p>Holding Company: ${holdingCo}</p>
+            <p>Investment Firm: ${investingFirm}</p>
+            <p>Financial Institution: ${financialInst}</p>
+            <p>Consulting Firm: ${consultingFirm}</p>
+            <p>For Profit: ${forProfit}</p>
+            <p>Non Profit: ${nonProfit}</p>
+            <p>Private Equity Company: ${privateEquityCo}</p>
+            <p>REIT: ${reit}</p>
+            <p>Chain Home Office: ${chainHomeOffice}</p>
+            <p>Trust/Trustee: ${trust}</p>
+            <p>Other Type: ${otherType}</p>
+            <p>Other Type Text: ${otherTypeText}</p>
+            <p>Parent Company: ${parentCo}</p>
+            <p>Owned by Other Org/Ind: ${otherOwner}</p>
+        </section>
     `
     console.log(facilityData)
 }
