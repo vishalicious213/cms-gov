@@ -199,32 +199,32 @@ function renderFacility(facilityId) {
                     <p>Financial Institution: ${financialInst}</p>
                 </div>
                 <div>
-                    <p>Consulting Firm: ${consultingFirm}</p>
-                    <p>Consulting Firm: ${consultingFirm}</p>
+                    <p>Consulting Firm:</p>
+                    <p>${consultingFirm}</p>
                 </div>
                 <div>
-                    <p>For Profit: ${forProfit}</p>
-                    <p>For Profit: ${forProfit}</p>
+                    <p>For Profit:</p>
+                    <p>${forProfit}</p>
                 </div>
                 <div>
-                    <p>Non Profit: ${nonProfit}</p>
-                    <p>Non Profit: ${nonProfit}</p>
+                    <p>Non Profit:</p>
+                    <p>${nonProfit}</p>
                 </div>
                 <div>
-                    <p>Private Equity Company: ${privateEquityCo}</p>
-                    <p>Private Equity Company: ${privateEquityCo}</p>
+                    <p>Private Equity Company:</p>
+                    <p>${privateEquityCo}</p>
                 </div>
                 <div>
-                    <p>REIT: ${reit}</p>
-                    <p>REIT: ${reit}</p>
+                    <p>REIT:</p>
+                    <p>${reit}</p>
                 </div>
                 <div>
-                    <p>Chain Home Office: ${chainHomeOffice}</p>
-                    <p>Chain Home Office: ${chainHomeOffice}</p>
+                    <p>Chain Home Office:</p>
+                    <p>${chainHomeOffice}</p>
                 </div>
                 <div>
-                    <p>Trust/Trustee: ${trust}</p>
-                    <p>Trust/Trustee: ${trust}</p>
+                    <p>Trust/Trustee:</p>
+                    <p>${trust}</p>
                 </div>
             </section>
             <p>Other Type: ${otherType}</p>
