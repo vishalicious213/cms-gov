@@ -122,7 +122,7 @@ function renderFacility(facilityId) {
     facilityInfo.innerHTML = ""
     const facilityData = facilities.find(facility => facility["ASSOCIATE ID"] === facilityId)
 
-    const {"ENROLLMENT ID": enrollmentId, "ASSOCIATE ID": associateId, "ORGANIZATION NAME": orgName, "ASSOCIATE ID - OWNER": ownerAssociateId, "TYPE - OWNER": ownerType, "ROLE CODE - OWNER": ownerRoleCode, "ROLE TEXT - OWNER": ownerRoleText, "ASSOCIATION DATE - OWNER": ownerAssocDate, "FIRST NAME - OWNER": firstName, "MIDDLE NAME - OWNER": midName, "LAST NAME - OWNER": lastName, "TITLE - OWNER": ownerTitle} = facilityData
+    const {"ENROLLMENT ID": enrollmentId, "ASSOCIATE ID": associateId, "ORGANIZATION NAME": orgName, "ASSOCIATE ID - OWNER": ownerAssociateId, "TYPE - OWNER": ownerType, "ROLE CODE - OWNER": ownerRoleCode, "ROLE TEXT - OWNER": ownerRoleText, "ASSOCIATION DATE - OWNER": ownerAssocDate, "FIRST NAME - OWNER": firstName, "MIDDLE NAME - OWNER": midName, "LAST NAME - OWNER": lastName, "TITLE - OWNER": ownerTitle, "ORGANIZATION NAME - OWNER": ownerOrgName, "DOING BUSINESS AS NAME - OWNER": dbaName, "ADDRESS LINE 1 - OWNER": address1, "ADDRESS LINE 2 - OWNER": address2, "CITY - OWNER": city, "STATE - OWNER": state, "ZIP CODE - OWNER": zipCode} = facilityData
 
     facilityInfo.innerHTML = `
         <p>Enrollment ID: ${enrollmentId}</p>
@@ -137,6 +137,13 @@ function renderFacility(facilityId) {
         <p>Owner Middle Name: ${midName}</p>
         <p>Owner Last Name: ${lastName}</p>
         <p>Owner Title: ${ownerTitle}</p>
+        <p>Owner Organization Name: ${ownerOrgName}</p>
+        <p>Doing Business As: ${dbaName}</p>
+        <p>Address line 1: ${address1}</p>
+        <p>Address line 2: ${address2}</p>
+        <p>City: ${city}</p>
+        <p>State: ${state}</p>
+        <p>Zip Code: ${zipCode}</p>
     `
 // <p>: ${}</p>
     console.log(facilityData)
