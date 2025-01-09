@@ -172,44 +172,58 @@ function renderFacility(facilityId) {
                 </div>
                 <div>
                     <p>LLC: ${llc}</p>
+                    <p>LLC: ${llc}</p>
                 </div>
                 <div>
+                    <p>Medical Provider Supplier: ${medProviderSupplier}</p>
                     <p>Medical Provider Supplier: ${medProviderSupplier}</p>
                 </div>
                 <div>
                     <p>Management Services Company: ${mgmtServicesCo}</p>
+                    <p>Management Services Company: ${mgmtServicesCo}</p>
                 </div>
                 <div>
+                    <p>Medical Staffing Company: ${medStaffCo}</p>
                     <p>Medical Staffing Company: ${medStaffCo}</p>
                 </div>
                 <div>
                     <p>Holding Company: ${holdingCo}</p>
+                    <p>Holding Company: ${holdingCo}</p>
                 </div>
                 <div>
+                    <p>Investment Firm: ${investingFirm}</p>
                     <p>Investment Firm: ${investingFirm}</p>
                 </div>
                 <div>
                     <p>Financial Institution: ${financialInst}</p>
+                    <p>Financial Institution: ${financialInst}</p>
                 </div>
                 <div>
+                    <p>Consulting Firm: ${consultingFirm}</p>
                     <p>Consulting Firm: ${consultingFirm}</p>
                 </div>
                 <div>
                     <p>For Profit: ${forProfit}</p>
+                    <p>For Profit: ${forProfit}</p>
                 </div>
                 <div>
+                    <p>Non Profit: ${nonProfit}</p>
                     <p>Non Profit: ${nonProfit}</p>
                 </div>
                 <div>
                     <p>Private Equity Company: ${privateEquityCo}</p>
+                    <p>Private Equity Company: ${privateEquityCo}</p>
                 </div>
                 <div>
+                    <p>REIT: ${reit}</p>
                     <p>REIT: ${reit}</p>
                 </div>
                 <div>
                     <p>Chain Home Office: ${chainHomeOffice}</p>
+                    <p>Chain Home Office: ${chainHomeOffice}</p>
                 </div>
                 <div>
+                    <p>Trust/Trustee: ${trust}</p>
                     <p>Trust/Trustee: ${trust}</p>
                 </div>
             </section>
