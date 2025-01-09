@@ -122,7 +122,7 @@ function renderFacility(facilityId) {
     facilityInfo.innerHTML = ""
     const facilityData = facilities.find(facility => facility["ASSOCIATE ID"] === facilityId)
 
-    const {"ENROLLMENT ID": enrollmentId, "ASSOCIATE ID": associateId, "ORGANIZATION NAME": orgName, "ASSOCIATE ID - OWNER": ownerAssociateId, "TYPE - OWNER": ownerType, "ROLE CODE - OWNER": ownerRoleCode, "ROLE TEXT - OWNER": ownerRoleText, "ASSOCIATION DATE - OWNER": ownerAssocDate, "FIRST NAME - OWNER": firstName, "MIDDLE NAME - OWNER": midName, "LAST NAME - OWNER": lastName, "TITLE - OWNER": ownerTitle, "ORGANIZATION NAME - OWNER": ownerOrgName, "DOING BUSINESS AS NAME - OWNER": dbaName, "ADDRESS LINE 1 - OWNER": address1, "ADDRESS LINE 2 - OWNER": address2, "CITY - OWNER": city, "STATE - OWNER": state, "ZIP CODE - OWNER": zipCode, "PERCENTAGE OWNERSHIP": percentage, "CREATED FOR ACQUISITION - OWNER": acquisition, "CORPORATION - OWNER": corporation, "LLC - OWNER": llc, "MEDICAL PROVIDER SUPPLIER - OWNER": medProviderSupplier, "MANAGEMENT SERVICES COMPANY - OWNER": mgmtServicesCo, "MEDICAL STAFFING COMPANY - OWNER": medStaffCo} = facilityData
+    const {"ENROLLMENT ID": enrollmentId, "ASSOCIATE ID": associateId, "ORGANIZATION NAME": orgName, "ASSOCIATE ID - OWNER": ownerAssociateId, "TYPE - OWNER": ownerType, "ROLE CODE - OWNER": ownerRoleCode, "ROLE TEXT - OWNER": ownerRoleText, "ASSOCIATION DATE - OWNER": ownerAssocDate, "FIRST NAME - OWNER": firstName, "MIDDLE NAME - OWNER": midName, "LAST NAME - OWNER": lastName, "TITLE - OWNER": ownerTitle, "ORGANIZATION NAME - OWNER": ownerOrgName, "DOING BUSINESS AS NAME - OWNER": dbaName, "ADDRESS LINE 1 - OWNER": address1, "ADDRESS LINE 2 - OWNER": address2, "CITY - OWNER": city, "STATE - OWNER": state, "ZIP CODE - OWNER": zipCode, "PERCENTAGE OWNERSHIP": percentage, "CREATED FOR ACQUISITION - OWNER": acquisition, "CORPORATION - OWNER": corporation, "LLC - OWNER": llc, "MEDICAL PROVIDER SUPPLIER - OWNER": medProviderSupplier, "MANAGEMENT SERVICES COMPANY - OWNER": mgmtServicesCo, "MEDICAL STAFFING COMPANY - OWNER": medStaffCo, "HOLDING COMPANY - OWNER": holdingCo, "INVESTMENT FIRM - OWNER": investingFirm, "FINANCIAL INSTITUTION - OWNER": financialInst, "CONSULTING FIRM - OWNER": consultingFirm, "FOR PROFIT - OWNER": forProfit, "NON PROFIT - OWNER": nonProfit, "PRIVATE EQUITY COMPANY - OWNER": privateEquityCo} = facilityData
 
     facilityInfo.innerHTML = `
         <p>Enrollment ID: ${enrollmentId}</p>
@@ -151,6 +151,13 @@ function renderFacility(facilityId) {
         <p>Medical Provider Supplier: ${medProviderSupplier}</p>
         <p>Management Services Company: ${mgmtServicesCo}</p>
         <p>Medical Staffing Company: ${medStaffCo}</p>
+        <p>Holding Company: ${holdingCo}</p>
+        <p>Investment Firm: ${investingFirm}</p>
+        <p>Financial Institution: ${financialInst}</p>
+        <p>Consulting Firm: ${consultingFirm}</p>
+        <p>For Profit: ${forProfit}</p>
+        <p>Non Profit: ${nonProfit}</p>
+        <p>Private Equity Company: ${privateEquityCo}</p>
     `
 // <p>: ${}</p>
     console.log(facilityData)
