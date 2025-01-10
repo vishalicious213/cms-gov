@@ -115,6 +115,7 @@ function renderFacility(facilityId) {
         <section class="owners-main">
             <section>
                 <section class="owner-section">
+                    <h3>Identification</h3>
                     <p>Enrollment ID: ${enrollmentId}</p>
                     <p>Associate ID: ${associateId}</p>
                     <div>
@@ -124,7 +125,7 @@ function renderFacility(facilityId) {
                 </section>
 
                 <section class="owner-section">
-                    <h3>Owner Type & Identification</h3>
+                    <h3>Owner Type</h3>
                     <p>Owner Associate ID: ${ownerAssociateId}</p>
                     <p>Owner Type: ${ownerType}</p>
                     <p>Owner Role Code: ${ownerRoleCode}</p>
