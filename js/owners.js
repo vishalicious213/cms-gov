@@ -88,7 +88,7 @@ async function renderFacilityList() {
         }, new Map()).values()
     )
 
-    console.log(uniqueFacilities)
+    // console.log(uniqueFacilities)
 
     uniqueFacilities.forEach (facility => {
         const option = document.createElement("option")
@@ -236,7 +236,7 @@ function renderFacility(facilityId) {
             <p>Owned by Other Org/Ind: ${otherOwner}</p>
         </section>
     `
-    console.log(facilityData)
+    // console.log(facilityData)
 }
 
 // ⬇️ UTILITY FUNCTIONS ⬇️
@@ -255,7 +255,7 @@ async function getStateFacilities(state) {
 
             return facilityName(a).localeCompare(facilityName(b))
         })
-        console.log(facilities)
+        // console.log(facilities)
     }
     catch (err) {
         console.error("Failed to fetch state facilities from CMS:", err)
