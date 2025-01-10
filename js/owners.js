@@ -163,7 +163,7 @@ function renderFacility(facilityId) {
                 </section>
             </section>
 
-            <section class="owner-section">
+            <section class="owner-section org-owner-type-details">
                 <h3>Organizational Owner Type Details</h3>
                 <section class="owner-type-details">
                     <div>
@@ -231,6 +231,7 @@ function renderFacility(facilityId) {
                         <p>${trust || "-"}</p>
                     </div>
                 </section>
+
                 <p>Other Type: ${otherType}</p>
                 <p>Other Type Text: ${otherTypeText}</p>
                 <div>
