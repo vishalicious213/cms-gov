@@ -112,128 +112,132 @@ function renderFacility(facilityId) {
 
     facilityInfo.innerHTML = `
         <h2>${facilityName}</h2>
-        <section class="owner-section">
-            <p>Enrollment ID: ${enrollmentId}</p>
-            <p>Associate ID: ${associateId}</p>
-            <div>
-                <p>Organization Name:</p>
-                <p>${orgName}</p>
-            </div>
-        </section>
+        <section class="owners-main">
+            <section>
+                <section class="owner-section">
+                    <p>Enrollment ID: ${enrollmentId}</p>
+                    <p>Associate ID: ${associateId}</p>
+                    <div>
+                        <p>Organization Name:</p>
+                        <p>${orgName}</p>
+                    </div>
+                </section>
 
-        <section class="owner-section">
-            <h3>Owner Type & Identification</h3>
-            <p>Owner Associate ID: ${ownerAssociateId}</p>
-            <p>Owner Type: ${ownerType}</p>
-            <p>Owner Role Code: ${ownerRoleCode}</p>
-            <div>
-                <p>Owner Role Text:</p>
-                <p>${ownerRoleText}</p>
-            </div>
-            <p>Owner Association Date: ${ownerAssocDate}</p>
-        </section>
+                <section class="owner-section">
+                    <h3>Owner Type & Identification</h3>
+                    <p>Owner Associate ID: ${ownerAssociateId}</p>
+                    <p>Owner Type: ${ownerType}</p>
+                    <p>Owner Role Code: ${ownerRoleCode}</p>
+                    <div>
+                        <p>Owner Role Text:</p>
+                        <p>${ownerRoleText}</p>
+                    </div>
+                    <p>Owner Association Date: ${ownerAssocDate}</p>
+                </section>
 
-        <section class="owner-section">
-            <h3>Individual Owner</h3>
-            <p>Owner First Name: ${firstName}</p>
-            <p>Owner Middle Name: ${midName}</p>
-            <p>Owner Last Name: ${lastName}</p>
-            <p>Owner Title: ${ownerTitle}</p>
-        </section>
+                <section class="owner-section">
+                    <h3>Individual Owner</h3>
+                    <p>Owner First Name: ${firstName}</p>
+                    <p>Owner Middle Name: ${midName}</p>
+                    <p>Owner Last Name: ${lastName}</p>
+                    <p>Owner Title: ${ownerTitle}</p>
+                </section>
 
-        <section class="owner-section">
-            <h3>Organizational Owner</h3>
-            <div>
-                <p>Organization Owner Name:</p>
-                <p>${ownerOrgName}</p>
-            </div>
-            <div>
-                <p>Doing Business As:</p>
-                <p>${dbaName}</p>
-            </div>
-            <p>Address line 1: ${address1}</p>
-            <p>Address line 2: ${address2}</p>
-            <p>City: ${city}</p>
-            <p>State: ${state}</p>
-            <p>Zip Code: ${zipCode}</p>
-            <p>Percentage Ownership: ${percentage}</p>
-        </section>
-
-        <section class="owner-section">
-            <h3>Organizational Owner Type Details</h3>
-            <section class="owner-type-details">
-                <div>
-                    <p>Created for Acquisition:</p>
-                    <p>${acquisition || "-"}</p>
-                </div>
-                <div>
-                    <p>Corporation:</p>
-                    <p>${corporation || "-"}</p>
-                </div>
-                <div>
-                    <p>LLC:</p>
-                    <p>${llc || "-"}</p>
-                </div>
-                <div>
-                    <p>Medical Provider Supplier:</p>
-                    <p>${medProviderSupplier || "-"}</p>
-                </div>
-                <div>
-                    <p>Mgmt Services Company:</p>
-                    <p>${mgmtServicesCo || "-"}</p>
-                </div>
-                <div>
-                    <p>Medical Staffing Company:</p>
-                    <p>${medStaffCo || "-"}</p>
-                </div>
-                <div>
-                    <p>Holding Company:</p>
-                    <p>${holdingCo || "-"}</p>
-                </div>
-                <div>
-                    <p>Investment Firm:</p>
-                    <p>${investingFirm || "-"}</p>
-                </div>
-                <div>
-                    <p>Financial Institution:</p>
-                    <p>${financialInst || "-"}</p>
-                </div>
-                <div>
-                    <p>Consulting Firm:</p>
-                    <p>${consultingFirm || "-"}</p>
-                </div>
-                <div>
-                    <p>For Profit:</p>
-                    <p>${forProfit || "-"}</p>
-                </div>
-                <div>
-                    <p>Non Profit:</p>
-                    <p>${nonProfit || "-"}</p>
-                </div>
-                <div>
-                    <p>Private Equity Company:</p>
-                    <p>${privateEquityCo || "-"}</p>
-                </div>
-                <div>
-                    <p>REIT:</p>
-                    <p>${reit || "-"}</p>
-                </div>
-                <div>
-                    <p>Chain Home Office:</p>
-                    <p>${chainHomeOffice || "-"}</p>
-                </div>
-                <div>
-                    <p>Trust/Trustee:</p>
-                    <p>${trust || "-"}</p>
-                </div>
+                <section class="owner-section">
+                    <h3>Organizational Owner</h3>
+                    <div>
+                        <p>Organization Owner Name:</p>
+                        <p>${ownerOrgName}</p>
+                    </div>
+                    <div>
+                        <p>Doing Business As:</p>
+                        <p>${dbaName}</p>
+                    </div>
+                    <p>Address line 1: ${address1}</p>
+                    <p>Address line 2: ${address2}</p>
+                    <p>City: ${city}</p>
+                    <p>State: ${state}</p>
+                    <p>Zip Code: ${zipCode}</p>
+                    <p>Percentage Ownership: ${percentage}</p>
+                </section>
             </section>
-            <p>Other Type: ${otherType}</p>
-            <p>Other Type Text: ${otherTypeText}</p>
-            <div>
-                <p>Parent Company:</p>
-                <p>${parentCo}</p>
-            </div>
-            <p>Owned by Other Org/Ind: ${otherOwner}</p>
+
+            <section class="owner-section">
+                <h3>Organizational Owner Type Details</h3>
+                <section class="owner-type-details">
+                    <div>
+                        <p>Created for Acquisition:</p>
+                        <p>${acquisition || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Corporation:</p>
+                        <p>${corporation || "-"}</p>
+                    </div>
+                    <div>
+                        <p>LLC:</p>
+                        <p>${llc || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Medical Provider Supplier:</p>
+                        <p>${medProviderSupplier || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Mgmt Services Company:</p>
+                        <p>${mgmtServicesCo || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Medical Staffing Company:</p>
+                        <p>${medStaffCo || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Holding Company:</p>
+                        <p>${holdingCo || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Investment Firm:</p>
+                        <p>${investingFirm || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Financial Institution:</p>
+                        <p>${financialInst || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Consulting Firm:</p>
+                        <p>${consultingFirm || "-"}</p>
+                    </div>
+                    <div>
+                        <p>For Profit:</p>
+                        <p>${forProfit || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Non Profit:</p>
+                        <p>${nonProfit || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Private Equity Company:</p>
+                        <p>${privateEquityCo || "-"}</p>
+                    </div>
+                    <div>
+                        <p>REIT:</p>
+                        <p>${reit || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Chain Home Office:</p>
+                        <p>${chainHomeOffice || "-"}</p>
+                    </div>
+                    <div>
+                        <p>Trust/Trustee:</p>
+                        <p>${trust || "-"}</p>
+                    </div>
+                </section>
+                <p>Other Type: ${otherType}</p>
+                <p>Other Type Text: ${otherTypeText}</p>
+                <div>
+                    <p>Parent Company:</p>
+                    <p>${parentCo}</p>
+                </div>
+                <p>Owned by Other Org/Ind: ${otherOwner}</p>
+            </section>
         </section>
     `
     // console.log(facilityData)
